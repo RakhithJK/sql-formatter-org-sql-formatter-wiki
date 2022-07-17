@@ -17,7 +17,7 @@ Reference of SQL syntax variations.
 - [GROUP BY](./GROUP-BY-clause)
 - [HAVING](./HAVING-clause)
 - [WINDOW](./WINDOW-clause)
-- [ORDER BY](./order-BY-clause)
+- [ORDER BY](./ORDER-BY-clause)
 - [LIMIT & OFFSET](./LIMIT-clause)
 
 ## Statements
