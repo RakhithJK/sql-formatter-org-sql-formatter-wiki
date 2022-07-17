@@ -846,6 +846,19 @@ _No support for ALTER TABLE._
       [FILTER_PREDICATE = {null | table_predicate_function} ","]
         MIGRATION_STATE = {OUTBOUND | INBOUND | PAUSED}
 
+[Trino][]:
+
+    ALTER TABLE [IF EXISTS] alter_table_action
+
+    alter_table_action:
+        RENAME TO identifier
+      | ADD COLUMN [IF NOT EXISTS] column_def
+      | RENAME COLUMN [IF EXISTS] identifier TO identifier
+      | DROP COLUMN [IF EXISTS] identifier
+      | SET AUTHORIZATION [USER | ROLE] identifier
+      | SET PROPERTIES {identifier EQ {DEFAULT | expr}} ["," ...]
+      | EXECUTE procedure_name ["(" arg ["," ...] ")"] [WHERE expr]
+
 [sql standard]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_11_10_alter_table_statement
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#alter_table_set_options_statement
 [db2]: https://www.ibm.com/docs/en/db2/9.7?topic=statements-alter-table
@@ -859,3 +872,4 @@ _No support for ALTER TABLE._
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-alter-table.html
 [sqlite]: https://www.sqlite.org/lang_altertable.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-table-transact-sql?view=sql-server-ver15
+[trino]: https://github.com/trinodb/trino/blob/c7b26825218d5d11e9469984977dee6856f362ff/core/trino-parser/src/main/antlr4/io/trino/sql/parser/SqlBase.g4#L65
