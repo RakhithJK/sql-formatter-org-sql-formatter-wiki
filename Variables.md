@@ -16,7 +16,7 @@
 - [Transact-SQL][]: `@name` (using identifier syntax for name)
 - Trino: _N/A_
 
-[parameters]: ./parameters.md
+[parameters]: ./parameters
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/procedural-language
 [db2]: https://www.ibm.com/docs/en/db2-for-zos/11?topic=pl-references-sql-parameters-variables
 [hive]: https://cwiki.apache.org/confluence/display/Hive/LanguageManual+VariableSubstitution
