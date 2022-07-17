@@ -28,3 +28,7 @@ Reference of SQL syntax variations.
 - [CREATE TABLE](./CREATE-TABLE)
 - [CREATE VIEW](./CREATE-VIEW)
 - [ALTER TABLE](./ALTER-TABLE)
+
+## About formatting SQL
+
+- [SQL formatting standards and tools](formatting)
