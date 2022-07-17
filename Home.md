@@ -23,6 +23,7 @@ Reference of SQL syntax variations.
 - [WINDOW](./WINDOW-clause)
 - [ORDER BY](./ORDER-BY-clause)
 - [LIMIT & OFFSET](./LIMIT-clause)
+- [Set operations](./Set-operations)
 
 ## Statements
 
