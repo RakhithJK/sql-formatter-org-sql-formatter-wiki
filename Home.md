@@ -10,21 +10,21 @@ Reference of SQL syntax variations.
 
 ## Queries
 
-- [WITH](./with)
-- [SELECT](./select)
-- [FROM](./from)
-- [WHERE](./where)
-- [GROUP BY](./group-by)
-- [HAVING](./having)
-- [WINDOW](./window)
-- [ORDER BY](./order-by)
-- [LIMIT & OFFSET](./limit)
+- [WITH](./WITH-clause)
+- [SELECT](./SELECT-clause)
+- [FROM](./FROM-clause)
+- [WHERE](./WHERE-clause)
+- [GROUP BY](./GROUP-BY-clause)
+- [HAVING](./HAVING-clause)
+- [WINDOW](./WINDOW-clause)
+- [ORDER BY](./order-BY-clause)
+- [LIMIT & OFFSET](./LIMIT-clause)
 
 ## Statements
 
-- [INSERT](./insert)
-- [UPDATE](./update)
-- [DELETE](./delete)
-- [CREATE TABLE](./create-table)
-- [CREATE VIEW](./create-view)
-- [ALTER TABLE](./alter-table)
+- [INSERT](./INSERT)
+- [UPDATE](./UPDATE)
+- [DELETE](./DELETE)
+- [CREATE TABLE](./CREATE-TABLE)
+- [CREATE VIEW](./CREATE-VIEW)
+- [ALTER TABLE](./ALTER-TABLE)
