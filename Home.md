@@ -32,6 +32,7 @@ Reference of SQL syntax variations.
 - [CREATE TABLE](./CREATE-TABLE)
 - [CREATE VIEW](./CREATE-VIEW)
 - [ALTER TABLE](./ALTER-TABLE)
+- [DROP TABLE](./DROP-TABLE)
 
 ## About formatting SQL
 
