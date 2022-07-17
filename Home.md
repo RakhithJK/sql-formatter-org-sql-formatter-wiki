@@ -22,7 +22,7 @@ Reference of SQL syntax variations.
 
 ## Statements
 
-- [INSERT](./INSERT)
+- [INSERT INTO](./INSERT-INTO)
 - [UPDATE](./UPDATE)
 - [DELETE FROM](./DELETE-FROM)
 - [CREATE TABLE](./CREATE-TABLE)
