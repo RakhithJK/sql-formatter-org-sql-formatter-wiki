@@ -39,11 +39,25 @@ Other than that, the following dialects support everything else:
 - [N1QL][] <sup>1</sup>
 - [PostgreSQL][] <sup>1</sup>
 - [SQLite][] <sup>1</sup>
+- [Trino][] <sup>1, 2</sup>
 
 1.  These dialects support an extra `GROUPS` option in `frame_units`:
 
         frame_units:
           ROWS | RANGE | GROUPS
+
+2. [Trino][] supports an additional pattern matching syntax around `frame_definition`:
+
+        trino_frame_definition:
+          [MEASURES measure_definition ["," ...]]
+          frame_definition
+          [AFTER MATCH skip_to]
+          [INITIAL | SEEK]
+          [PATTERN "(" row_pattern ")"]
+          [SUBSET subset_definition ["," ...]]
+          [DEFINE variable_definition ["," ...]]
+
+    [Trino][] does not support `frame_exclusion`.
 
 [Spark][] has a rudimentary WINDOW support:
 
@@ -65,3 +79,4 @@ Though they do support window functions.
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html
 [transact-sql]: https://docs.microsoft.com/en-US/sql/t-sql/queries/select-window-transact-sql?view=sql-server-ver16&viewFallbackFrom=sql-server-ver15
+[trino]: https://github.com/trinodb/trino/blob/c7b26825218d5d11e9469984977dee6856f362ff/core/trino-parser/src/main/antlr4/io/trino/sql/parser/SqlBase.g4#L696
