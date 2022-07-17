@@ -1,3 +1,7 @@
+This wiki is used for documenting differences between various SQL dialects.
+
+Useful material for developers of SQL Formatter. Not that useful if you just want to use SQL Formatter.
+
 # SQL syntax
 
 Reference of SQL syntax variations.
