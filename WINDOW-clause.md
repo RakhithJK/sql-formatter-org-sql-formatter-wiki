@@ -1,5 +1,3 @@
-# WINDOW clause
-
 [SQL standard][] defines the following syntax for WINDOW clause:
 
     WINDOW { identifier AS "(" window_specification ")" } ["," ...]
