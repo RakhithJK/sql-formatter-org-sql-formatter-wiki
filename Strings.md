@@ -3,16 +3,16 @@ The real world implementations have lots of variation:
 
 - [BigQuery][]:
   - `".."`, `'..'`, `"""..."""`, `'''..'''` (backslash `\` used for escaping)
-  - `R".."`, `r'''..'''` the same as above, but with `r` or `R` prefix (backlashes not used for escaping)
-  - `B".."`, `b'''..'''` the same as above, but with `b` or `B` prefix (backlashes not used for escaping)
-  - `RB".."`, `br'''..'''` the same as above, but with additional `r` or `R` prefix (backlashes not used for escaping)
+  - `R".."`, `r'''..'''` denotes raw strings (backslashes not used for escaping)
+  - `B".."`, `b'''..'''` denotes binary strings (backslashes not used for escaping)
+  - `RB".."`, `br'''..'''` the same as above, raw and binary (backslashes not used for escaping)
 - [DB2][]:
   - `'..'` (two single quotes `''` are used for escaping)
   - `X'..'` a hex string (no escaping)
-  - `U&'..'` an unicode string (two single quotes `''` are used for escaping)
+  - `U&'..'` [a Unicode string][db2-unicode] (two single quotes `''` are used for escaping)
   - `G'..'`, `N'..'` a graphic string
   - `GX'..'` a graphic hex string (no escaping)
-  - `UX'..'` an UCS-2 graphic string (no escaping)
+  - `UX'..'` a Unicode hex string (no escaping)
 - [Hive][]: `'..'`, `".."` (backslash `\` used for escaping)
 - [MariaDB][]:
   - `'..'`, `".."`<sup>2</sup> (backslash `\`<sup>1</sup> or repeated single-quote `''` used for escaping)
@@ -58,6 +58,7 @@ The real world implementations have lots of variation:
 
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/lexical#string_and_bytes_literals
 [db2]: https://www.ibm.com/docs/en/db2/9.7?topic=elements-constants
+[db2-unicode]: https://www.ibm.com/docs/en/db2/9.7?topic=database-language-aware-collation
 [hive]: https://cwiki.apache.org/confluence/display/hive/languagemanual%20types#LanguageManualTypes-StringsstringStrings
 [mariadb]: https://mariadb.com/kb/en/string-literals/
 [mariadb-hex]: https://mariadb.com/kb/en/hexadecimal-literals/
