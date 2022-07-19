@@ -16,7 +16,7 @@ The differences from this are listed below:
 - [SQLite][sqlite-syntax-pdf]: _(no differences)_
 - [Transact-SQL][]: `@` and `#` are allowed as first chars plus `$` in the rest. Also unicode letters are allowed.
   Though the beginning `@` signifies a local variable or parameter and `#` a temporary table or procedure.
-- [Trino][]: `[a-zA-Z0-9_]+`, no first-letter restrictions
+- [Trino][]: _(no differences)_<sup>4</sup>
 
 ## Delimited identifiers
 
@@ -35,13 +35,14 @@ There is a considerable variation in implementations:
 - `` `..` `` [Spark][]
 - `".."`, `` `..` ``, `[..]` [SQLite][sqlite-keywords]
 - `".."`<sup>3</sup>, `[..]` [Transact-SQL][]
-- `".."`, `` `..` `` [Trino][]
+- `".."`<sup>4</sup> [Trino][]
 
 Notes:
 
 1. when ANSI_QUOTES mode enabled
 2. when MSSQL mode enabled
 3. unless QUOTED_IDENTIFIER option has been set OFF
+4. Trino grammar lists `` `..` ``-quoted identifiers and identifiers starting with number, only to print an error message saying: these aren't supported.
 
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/lexical
 [db2]: https://www.ibm.com/docs/en/db2/9.7?topic=elements-identifiers
