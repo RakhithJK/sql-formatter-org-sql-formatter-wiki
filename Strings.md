@@ -9,10 +9,11 @@ The real world implementations have lots of variation:
 - [DB2][]:
   - `'..'` (two single quotes `''` are used for escaping)
   - `X'..'` a hex string (no escaping)
-  - `U&'..'` [a Unicode string][db2-unicode] (two single quotes `''` are used for escaping)
   - `G'..'`, `N'..'` a graphic string
+  - `BX'..'` a binary hex string (no escaping)
   - `GX'..'` a graphic hex string (no escaping)
   - `UX'..'` a Unicode hex string (no escaping)
+  - `U&'..'` [a Unicode string][db2-unicode] (two single quotes `''` are used for escaping)
 - [Hive][]: `'..'`, `".."` (backslash `\` used for escaping)
 - [MariaDB][]:
   - `'..'`, `".."`<sup>2</sup> (backslash `\`<sup>1</sup> or repeated single-quote `''` used for escaping)
