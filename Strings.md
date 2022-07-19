@@ -35,7 +35,8 @@ The real world implementations have lots of variation:
   - `X'..'`, `x'..'` hex string
 - [Redshift][]: `'..'`
 - [Spark][]:
-  - `'..'` (backslash `\` used for escaping)
+  - `'..'`, `".."` (backslash `\` used for escaping)
+  - `r'..'`, `r".."`, `R'..'`, `R".."` raw string (no escaping)
   - `X'..'` hex string
 - [SQLite][]:
   - `'..'` (two single quotes `''` are used for escaping)
