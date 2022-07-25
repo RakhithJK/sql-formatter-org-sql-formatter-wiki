@@ -9,8 +9,8 @@ All dialects support `UNION`, with rest there are variations:
 [BigQuery][]:
 
       UNION {ALL | DISTINCT}
-    | INTERSECT DISTINCT
     | EXCEPT DISTINCT
+    | INTERSECT DISTINCT
 
 [DB2][]:
 
@@ -54,8 +54,8 @@ All dialects support `UNION`, with rest there are variations:
 [Redshift][]:
 
       UNION [ ALL ]
-    | INTERSECT
     | EXCEPT
+    | INTERSECT
     | MINUS
 
 [Spark][]:
