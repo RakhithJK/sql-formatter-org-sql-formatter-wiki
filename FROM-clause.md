@@ -82,6 +82,8 @@ Supports the full standard plus:
 - `[LEFT] SEMI JOIN`
 - `[LEFT] ANTI JOIN`
 
+And `NATURAL ... JOIN` versions of these.
+
 [SQLite][]:
 
 Supports the full standard.
