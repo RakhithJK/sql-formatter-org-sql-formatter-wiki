@@ -42,7 +42,7 @@ The real world implementations have lots of variation:
   - `r'..'`, `r".."`, `R'..'`, `R".."` raw string (no escaping)
   - `X'..'`, `X".."` hex string
 - [SQLite][]:
-  - `'..'`, `".."`<sup>4</sup> (two quotes `''` are used for escaping)
+  - `'..'`, (`".."`<sup>4</sup>) (two quotes `''` are used for escaping)
   - `X'..'`, `x'..'` hex string
 - [Transact-SQL][]:
   - `'..'` (two single quotes `''` are used for escaping)
@@ -58,7 +58,7 @@ The real world implementations have lots of variation:
 1. unless the SQL_MODE has been set to NO_BACKSLASH_ESCAPES.
 2. unless ANSI_QUOTES mode is enabled.
 3. if the QUOTED_IDENTIFIER option has been set OFF.
-4. currently disabled as it conflicts with ".." identifiers
+4. SQLite sometimes [bends its quoting rules.][sqlite-note] It treats double-quoted identifiers as strings when they appear in the context where strings are expected, but identifiers are not.
 
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/lexical#string_and_bytes_literals
 [db2]: https://www.ibm.com/docs/en/db2/9.7?topic=elements-constants
@@ -74,5 +74,6 @@ The real world implementations have lots of variation:
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_Examples_with_character_types.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-literals.html#string-literal
 [sqlite]: https://www.sqlite.org/lang_expr.html#literal_values_constants_
+[sqlite-note]: https://www.sqlite.org/lang_keywords.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/data-types/constants-transact-sql?view=sql-server-ver15
 [trino]: https://github.com/trinodb/trino/blob/ca7dcaa873b9dd24185e9a69cecdd1dd8717694c/core/trino-parser/src/main/antlr4/io/trino/sql/parser/SqlBase.g4#L1146-L1159
