@@ -31,7 +31,7 @@ All dialects support `UNION`, with rest there are variations:
 
 [MySQL][]:
 
-    UNION {ALL | DISTINCT}
+    UNION [ALL | DISTINCT]
 
 [N1QL][]:
 
