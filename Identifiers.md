@@ -11,7 +11,7 @@ The differences from this are listed below:
 - [N1QL][]: _(no differences)_
 - [PL/SQL][]: can't start with `_`. Allows `$`, `#` in rest of the identifier.
 - [PostgreSQL][]: additionally `$` after first char. Also unicode letters are allowed.
-- [Redshift][]: also unicode letters are allowed.
+- [Redshift][]: also unicode letters are allowed. # is allowed as the first char of temp table names.
 - [Spark][]: _Seems like the usual syntax is allowed. But the docs are confusing._
 - [SQLite][sqlite-syntax-pdf]: _(no differences)_
 - [Transact-SQL][]: `@` and `#` are allowed as first chars plus `$` in the rest. Also unicode letters are allowed.
