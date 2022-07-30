@@ -7,7 +7,6 @@ This exact syntax is supported by:
 - [BigQuery][]
 - [N1QL][]
 - [Redshift][]
-- [Spark][]
 
 Other dialects have some variations:
 
@@ -21,7 +20,7 @@ Other dialects have some variations:
         ORDER OF table_name
       | expr [ASC | DESC] [NULLS FIRST | NULLS LAST]
 
-[Hive][] provides ORDER BY, SORT BY, CLUSTER BY, DISTRIBUTE BY:
+[Hive][] and [Spark][] provide ORDER BY, SORT BY, CLUSTER BY, DISTRIBUTE BY:
 
     ORDER BY {column [ASC | DESC] [NULLS FIRST | NULLS LAST]} ["," ...]
 
