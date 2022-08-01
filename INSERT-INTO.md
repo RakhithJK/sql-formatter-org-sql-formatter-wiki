@@ -34,7 +34,11 @@ All dialects (except Hive) suppurt this syntax, plus a bunch of extra stuff:
 
 [PL/SQL][]:
 
-    INSERT [hint] [ALL] INTO
+    INSERT [hint] {INTO | multi_table_insert}
+
+    multi_table_insert:
+      | ALL INTO
+      | [ALL | FIRST] WHEN condition THEN INTO
 
 [PostgreSQL][]:
 
