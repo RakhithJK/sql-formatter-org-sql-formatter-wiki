@@ -6,7 +6,7 @@ All dialects (except Hive) suppurt this syntax, plus a bunch of extra stuff:
 
 [BigQuery][]:
 
-    INSERT INTO table_name
+    INSERT [INTO] table_name
 
 [DB2][]:
 
