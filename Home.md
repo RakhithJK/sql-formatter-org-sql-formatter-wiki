@@ -25,11 +25,16 @@ Reference of SQL syntax variations.
 - [LIMIT & OFFSET](./LIMIT-clause)
 - [Set operations](./Set-operations)
 
-## Statements
+## DML statements
 
 - [INSERT INTO](./INSERT-INTO)
 - [UPDATE](./UPDATE)
 - [DELETE FROM](./DELETE-FROM)
+- [TRUNCATE TABLE](./TRUNCATE-TABLE) (non-standard) 
+- [MERGE INTO](./MERGE-INTO) (non-standard)
+
+## DDL statements:
+
 - [CREATE TABLE](./CREATE-TABLE)
 - [CREATE VIEW](./CREATE-VIEW)
 - [ALTER TABLE](./ALTER-TABLE)
