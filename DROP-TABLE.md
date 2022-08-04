@@ -10,7 +10,7 @@ Dialects have considerable variation:
 
 [DB2][]:
 
-    DROP TABLE table_name
+    DROP TABLE [HIERARCHY] table_name
 
 [Hive][]:
 
