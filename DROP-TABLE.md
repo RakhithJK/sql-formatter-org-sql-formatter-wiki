@@ -6,7 +6,7 @@ Dialects have considerable variation:
 
 [BigQuery][]:
 
-    DROP TABLE [IF EXISTS] table_name
+    DROP [EXTERNAL | SNAPSHOT] TABLE [IF EXISTS] table_name
 
 [DB2][]:
 
