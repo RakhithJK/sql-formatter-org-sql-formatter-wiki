@@ -6,7 +6,7 @@ Dialects have considerable variation:
 
 [BigQuery][]:
 
-    CREATE [OR REPLACE] [TEMP | TEMPORARY] TABLE [IF NOT EXISTS]
+    CREATE [OR REPLACE] [TEMP | TEMPORARY | SNAPSHOT | EXTERNAL] TABLE [IF NOT EXISTS]
 
 [DB2][]:
 
