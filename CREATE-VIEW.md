@@ -50,7 +50,7 @@ _No support for CREATE VIEW._
 
 [Redshift][]:
 
-    CREATE [OR REPLACE] VIEW
+    CREATE [OR REPLACE | MATERIALIZED] VIEW
 
 [Spark][]:
 
