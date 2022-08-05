@@ -14,7 +14,7 @@ Dialects have considerable variation:
 
 [Hive][]:
 
-    CREATE VIEW [IF NOT EXISTS]
+    CREATE [MATERIALIZED] VIEW [IF NOT EXISTS]
 
 [MariaDB][]:
 
@@ -42,6 +42,8 @@ _No support for CREATE VIEW._
 
     CREATE [OR REPLACE] [[NO] FORCE] [EDITIONING | EDITIONABLE [EDITIONING] | NONEDITIONABLE] VIEW
 
+    CREATE MATERIALIZED VIEW
+
 [PostgreSQL][]:
 
     CREATE [OR REPLACE] [TEMP | TEMPORARY] [RECURSIVE] VIEW
@@ -62,11 +64,11 @@ _No support for CREATE VIEW._
 
 [Transact-SQL][]:
 
-    CREATE [OR ALTER] VIEW
+    CREATE [OR ALTER | MATERIALIZED] VIEW
 
 [Trino][]:
 
-    CREATE [OR REPLACE] VIEW
+    CREATE [OR REPLACE] [MATERIALIZED] VIEW
 
 [sql standard]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_11_22_view_definition
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_view_statement
