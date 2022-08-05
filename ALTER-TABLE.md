@@ -82,7 +82,7 @@ Things are getting pretty crazy in the actual implementations:
       | ADD SECURITY POLICY policy_name
       | DROP SECURITY POLICY
 
-    alter_table_action:
+    alter_column_action:
         SET DATA TYPE altered_data_type
       | SET generated-column-alteration
       | SET EXPRESSION AS "(" generation_expression ")"
