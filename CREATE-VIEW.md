@@ -6,7 +6,7 @@ Dialects have considerable variation:
 
 [BigQuery][]:
 
-    CREATE [OR REPLACE] VIEW [IF NOT EXISTS]
+    CREATE [OR REPLACE] [MATERIALIZED] VIEW [IF NOT EXISTS]
 
 [DB2][]:
 
