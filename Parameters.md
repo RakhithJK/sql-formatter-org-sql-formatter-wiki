@@ -1,6 +1,6 @@
 Parameter placeholder markers used in prepared statements.
 
-**Note:** Apache Hive and Spark don't support prepared statements.
+**Note:** Apache Hive, SingleStoreDB and Spark don't support prepared statements.
 
 ## Positional parameters
 
