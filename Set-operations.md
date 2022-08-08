@@ -58,6 +58,13 @@ All dialects support `UNION`, with rest there are variations:
     | INTERSECT
     | MINUS
 
+SingleStoreDB ([union][singlestoredb-union], [intersect][singlestoredb-intersect], [except and minus][singlestoredb-except-and-minus]):
+
+      UNION [ALL | DISTINCT]
+    | EXCEPT
+    | INTERSECT
+    | MINUS
+
 [Spark][]:
 
       UNION [ALL | DISTINCT]
@@ -92,6 +99,9 @@ All dialects support `UNION`, with rest there are variations:
 [pl/sql]: https://docs.oracle.com/database/121/SQLRF/queries001.htm
 [postgresql]: https://www.postgresql.org/docs/current/sql-select.html#SQL-UNION
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_UNION.html
+[singlestoredb-union]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/union.html
+[singlestoredb-intersect]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/intersect.html
+[singlestoredb-except-and-minus]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/except-and-minus.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html#compound_select_statements
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/set-operators-except-and-intersect-transact-sql?view=sql-server-ver15
