@@ -108,6 +108,13 @@ No dialect fully supports the standard:
     common_table_expression:
       identifier ["(" column_name_list ")"] AS "(" query_expression ")"
 
+[SingleStoreDB][]:
+
+    WITH common_table_expression ["," ...]
+
+    common_table_expression:
+      identifier ["(" column_name_list ")"] AS "(" query_expression ")"
+
 [Spark][]:
 
     WITH common_table_expression ["," ...]
@@ -146,6 +153,7 @@ No dialect fully supports the standard:
 [pl/sql]: https://docs.oracle.com/database/121/SQLRF/statements_10002.htm#BABFAFID
 [postgresql]: https://www.postgresql.org/docs/current/queries-with.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_WITH_clause.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/with--common-table-expressions-.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select-cte.html
 [sqlite]: https://www.sqlite.org/syntax/common-table-expression.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/queries/with-common-table-expression-transact-sql?view=sql-server-ver16

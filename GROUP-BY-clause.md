@@ -54,6 +54,13 @@ There's a considerable variation is dialects:
 
     GROUP BY expr ["," ...]
 
+[SingleStoreDB][]:
+
+    GROUP BY {expr ["," ...] | extended_grouping_expr}
+
+    extended_grouping_expr:
+      {CUBE | ROLLUP} "(" expr ["," ...] ")"
+
 [Spark][]:
 
     GROUP BY expr ["," ...] [WITH ROLLUP | WITH CUBE]
@@ -105,6 +112,7 @@ There's a considerable variation is dialects:
 [pl/sql]: https://docs.oracle.com/database/121/SQLRF/statements_10002.htm#i2065777
 [postgresql]: https://www.postgresql.org/docs/current/sql-select.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_SELECT_synopsis.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/select.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html
 [transact-sql]: https://docs.microsoft.com/en-US/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver15

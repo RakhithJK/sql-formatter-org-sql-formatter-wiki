@@ -46,6 +46,10 @@ Other dialects have some variations:
 
     ORDER BY {expr [ASC | DESC | USING operator] [NULLS FIRST | NULLS LAST]} ["," ...]
 
+[SingleStoreDB][]:
+
+    ORDER BY {expr [ASC | DESC]} ["," ...]
+
 [SQLite][]:
 
     ORDER BY {expr [COLLATE collation] [ASC | DESC] [NULLS FIRST | NULLS LAST]} ["," ...]
@@ -68,6 +72,7 @@ Other dialects have some variations:
 [pl/sql]: https://docs.oracle.com/database/121/SQLRF/statements_10002.htm#i2168299
 [postgresql]: https://www.postgresql.org/docs/current/sql-select.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_ORDER_BY_clause.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/select.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html
 [transact-sql]: https://docs.microsoft.com/en-US/sql/t-sql/queries/select-order-by-clause-transact-sql?view=sql-server-ver15

@@ -75,6 +75,12 @@ Supports the full standard.
 
 Supports the full standard.
 
+[SingleStoreDB][]:
+
+Does not support `NATURAL INNER JOIN` and `NATURAL FULL [OUTER] JOIN`
+
+Additionally supports `STRAIGHT_JOIN`.
+
 [Spark][]:
 
 Supports the full standard plus:
@@ -111,6 +117,7 @@ Supports the full standard.
 [pl/sql]: https://docs.oracle.com/database/121/SQLRF/statements_10002.htm#CHDIJFDJ
 [postgresql]: https://www.postgresql.org/docs/current/sql-select.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_FROM_clause30.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/select.html#join-and-subqueries
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select-join.html
 [sqlite]: https://www.sqlite.org/syntax/join-clause.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/queries/from-transact-sql?view=sql-server-ver16

@@ -52,6 +52,12 @@ Every dialect however supports either `LIMIT OFFSET` or `OFFSET FETCH` syntax.
     [LIMIT {count | ALL}]
     [OFFSET offset]
 
+[SingleStoreDB][] supports two forms:
+
+    LIMIT [offset ","] count
+
+    LIMIT count OFFSET offset
+
 [Spark][]:
 
     LIMIT {count | ALL}
@@ -91,6 +97,7 @@ Starting with [SQL Server 2012][], one can use the `OFFSET FETCH` syntax:
 [pl/sql]: https://docs.oracle.com/database/121/SQLRF/statements_10002.htm#BABBADDD
 [postgresql]: https://www.postgresql.org/docs/current/sql-select.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_SELECT_synopsis.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/select.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html
 [transact-sql]: https://stackoverflow.com/questions/603724/how-to-implement-limit-with-sql-server
