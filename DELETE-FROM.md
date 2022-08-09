@@ -74,6 +74,16 @@ This base syntax is pretty well supported (except in Spark):
       [USING from_items]
       [WHERE condition]
 
+[SingleStoreDB][]:
+
+    DELETE FROM table_name
+      [WHERE expr]
+      [LIMIT count]
+
+    DELETE table_name FROM table_references
+      [WHERE expr]
+      [LIMIT count]
+
 [Spark][]:
 
 _No support for DELETE_
@@ -108,6 +118,7 @@ _No support for DELETE_
 [pl/sql]: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/DELETE.html
 [postgresql]: https://www.postgresql.org/docs/current/sql-delete.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_DELETE.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/delete.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax.html#dml-statements
 [sqlite]: https://www.sqlite.org/lang_delete.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/delete-transact-sql?view=sql-server-ver16
