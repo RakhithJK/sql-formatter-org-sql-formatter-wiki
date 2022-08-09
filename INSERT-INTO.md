@@ -48,6 +48,12 @@ All dialects (except Hive) suppurt this syntax, plus a bunch of extra stuff:
 
     INSERT INTO table_name
 
+[SingleStoreDB][]:
+
+    INSERT [IGNORE] [INTO] table_name
+
+    REPLACE [INTO] table_name
+
 [Spark][]:
 
     INSERT [INTO | OVERWRITE] [TABLE] table_name
@@ -76,6 +82,7 @@ All dialects (except Hive) suppurt this syntax, plus a bunch of extra stuff:
 [pl/sql]: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/INSERT.html
 [postgresql]: https://www.postgresql.org/docs/current/sql-insert.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_INSERT_30.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/insert.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-dml-insert-table.html
 [sqlite]: https://www.sqlite.org/lang_insert.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/insert-transact-sql?view=sql-server-ver16
