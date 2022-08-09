@@ -47,6 +47,10 @@ _No support for TRUNCATE_
 
     TRUNCATE [TABLE] table_name
 
+[SingleStoreDB][]:
+
+    TRUNCATE [TABLE] table_name
+
 [Spark][]:
 
     TRUNCATE TABLE table_name
@@ -74,6 +78,7 @@ _No support for TRUNCATE_
 [pl/sql]: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/TRUNCATE-TABLE.html
 [postgresql]: https://www.postgresql.org/docs/current/sql-truncate.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_TRUNCATE.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-definition-language-ddl/truncate.html
 [spark]: https://spark.apache.org/docs/3.3.0/sql-ref-syntax-ddl-truncate-table.html
 [sqlite]: https://www.sqlite.org/lang.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/truncate-table-transact-sql?view=sql-server-ver16
