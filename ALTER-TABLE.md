@@ -729,6 +729,28 @@ _No support for ALTER TABLE._
       | PRIMARY KEY "(" column_name ["," ...] ")"
       | FOREIGN KEY "(" column_name ["," ...] ")" REFERENCES reftable ["(" column_name ")"]
 
+[SingleStoreDB][]:
+
+    ALTER [ONLINE] TABLE table_name [alter_table_action ["," ...] [TIMEOUT number]
+
+    alter_table_action:
+        ADD [COLUMN] col_name { column_definition | AS computed_column_definition } [FIRST | AFTER <column_name>]
+      | ADD [COLUMN] (<column_name> <column_definition>, ...)
+      | ADD [UNIQUE] { INDEX | KEY } [<index_name>] [<index_type>] (<index_column_name>, ...) [<index_option>] ...
+      | DROP [COLUMN] <column_name>
+      | DROP { INDEX | KEY } <index_name>
+      | MODIFY [COLUMN] <column_name> <column_definition>
+            [FIRST | AFTER <column_name>]
+      | CHANGE <old_column_name> <new_column_name>
+      | RENAME [TO | AS] <new_table_name>
+      | MODIFY { INDEX | KEY } <index_name> SET ([<index_kv_option>], ...)
+      | AUTOSTATS_ENABLED = {ON|OFF}
+      | AUTOSTATS_CARDINALITY_MODE = {INCREMENTAL|PERIODIC|OFF}
+      | AUTOSTATS_HISTOGRAM_MODE = {CREATE|UPDATE|OFF}
+      | AUTOSTATS_SAMPLING = {ON|OFF}
+      | AUTO_INCREMENT [=] <new_value>
+      | COMPRESSION [=] { NONE | SPARSE }
+
 [Spark][]:
 
     ALTER TABLE table_name alter_table_action
@@ -869,6 +891,7 @@ _No support for ALTER TABLE._
 [pl/sql]: https://docs.oracle.com/en/database/oracle/oracle-database/18/sqlrf/ALTER-TABLE.html
 [postgresql]: https://www.postgresql.org/docs/current/sql-altertable.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_TABLE.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-definition-language-ddl/alter-table.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-alter-table.html
 [sqlite]: https://www.sqlite.org/lang_altertable.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-table-transact-sql?view=sql-server-ver15
