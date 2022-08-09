@@ -43,6 +43,10 @@ _No support for DROP TABLE._
 
     DROP TABLE [IF EXISTS] table_name ["," ...] [CASCADE | RESTRICT]
 
+[SingleStoreDB][]:
+
+    DROP [TEMPORARY] TABLE [IF EXISTS] table_name [FORCE]
+
 [Spark][]:
 
     DROP TABLE [IF EXISTS] table_name
@@ -69,6 +73,7 @@ _No support for DROP TABLE._
 [pl/sql]: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-TABLE.html
 [postgresql]: https://www.postgresql.org/docs/current/sql-droptable.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_DROP_TABLE.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-definition-language-ddl/drop-table.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-drop-table.html
 [sqlite]: https://www.sqlite.org/lang_droptable.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/drop-table-transact-sql?view=sql-server-ver15
