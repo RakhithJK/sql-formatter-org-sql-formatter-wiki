@@ -12,6 +12,7 @@ The differences from this are listed below:
 - [PL/SQL][]: can't start with `_`. Allows `$`, `#` in rest of the identifier.
 - [PostgreSQL][]: additionally `$` after first char. Also unicode letters are allowed.
 - [Redshift][]: also unicode letters are allowed. `#` is allowed as the first char of [temporary table names][redshift-temp].
+- SingleStoreDB: Same as MariaDB.<sup>5</sup>
 - [Spark][]: _Seems like the usual syntax is allowed. But the docs are confusing._
 - [SQLite][sqlite-syntax-pdf]: _(no differences)_
 - [Transact-SQL][]: `@` and `#` are allowed as first chars plus `$` in the rest. Also unicode letters are allowed.
@@ -28,6 +29,7 @@ There is a considerable variation in implementations:
 - `` `..` `` [Hive][]
 - `` `..` ``, (`".."`<sup>1</sup>, `[..]`<sup>2</sup>) [MariaDB][]
 - `` `..` ``, (`".."`<sup>1</sup>) [MySQL][]
+- `` `..` `` SingleStoreDB<sup>5</sup>
 - `` `..` `` [N1QL][]
 - `".."` [PL/SQL][]
 - `".."`, `U&".."` [PostgreSQL][]
@@ -43,6 +45,7 @@ Notes:
 2. when MSSQL mode enabled
 3. unless QUOTED_IDENTIFIER option has been set OFF
 4. Trino grammar lists `` `..` ``-quoted identifiers and identifiers starting with number, only to print an error message saying: these aren't supported.
+5. Tested SingleStoreDB syntax manually. Haven't found any documentation for these low-level details.
 
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/lexical
 [db2]: https://www.ibm.com/docs/en/db2/9.7?topic=elements-identifiers
