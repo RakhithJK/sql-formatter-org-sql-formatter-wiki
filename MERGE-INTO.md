@@ -102,6 +102,10 @@ _No support for MERGE_
 
 _No support for MERGE_
 
+SingleStoreDB:
+
+_No support for MERGE_
+
 [Spark][]:
 
 _No support for MERGE_
