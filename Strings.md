@@ -38,7 +38,7 @@ The real world implementations have lots of variation:
   - `X'..'`, `x'..'` hex string
 - [Redshift][]: `'..'`
 - SingleStoreDB:<sup>5</sup>
-  - `'..'`, `".."` (backslash `\`<sup>1</sup> or repeated quote (`''` or `""`) used for escaping)
+  - `'..'`, `".."` (backslash `\` or repeated quote (`''` or `""`) used for escaping)
   - `x'..'`, `X'..'` hex string
   - `b'..'`, `B'..'` a binary string
 - [Spark][]:
