@@ -47,6 +47,10 @@ _No support for CREATE TABLE._
 
     CREATE [[LOCAL] {TEMPORARY | TEMP}] TABLE [IF NOT EXISTS]
 
+[SingleStoreDB][]:
+
+    CREATE [ROWSTORE] [REFERENCE | TEMPORARY | GLOBAL TEMPORARY] TABLE [IF NOT EXISTS]
+
 [Spark][]:
 
     CREATE [EXTERNAL] TABLE [IF NOT EXISTS]
@@ -73,6 +77,7 @@ _No support for CREATE TABLE._
 [pl/sql]: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-TABLE.html
 [postgresql]: https://www.postgresql.org/docs/current/sql-createtable.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_NEW.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-definition-language-ddl/create-table.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-create-table.html
 [sqlite]: https://www.sqlite.org/lang_createtable.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver15
