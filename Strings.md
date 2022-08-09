@@ -37,6 +37,10 @@ The real world implementations have lots of variation:
   - `B'..'`, `b'..'` bit string
   - `X'..'`, `x'..'` hex string
 - [Redshift][]: `'..'`
+- SingleStoreDB:<sup>5</sup>
+  - `'..'`, `".."` (backslash `\`<sup>1</sup> or repeated quote (`''` or `""`) used for escaping)
+  - `x'..'`, `X'..'` hex string
+  - `b'..'`, `B'..'` a binary string
 - [Spark][]:
   - `'..'`, `".."` (backslash `\` used for escaping)
   - `r'..'`, `r".."`, `R'..'`, `R".."` raw string (no escaping)
@@ -59,6 +63,7 @@ The real world implementations have lots of variation:
 2. unless ANSI_QUOTES mode is enabled.
 3. if the QUOTED_IDENTIFIER option has been set OFF.
 4. SQLite sometimes [bends its quoting rules.][sqlite-note] It treats double-quoted identifiers as strings when they appear in the context where strings are expected, but identifiers are not.
+5. Tested SingleStoreDB manually. Haven't found any actual documentation about string syntax.
 
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/lexical#string_and_bytes_literals
 [db2]: https://www.ibm.com/docs/en/db2/9.7?topic=elements-constants
