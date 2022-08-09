@@ -54,6 +54,13 @@ _No support for CREATE VIEW._
 
     CREATE [OR REPLACE | MATERIALIZED] VIEW
 
+[SingleStoreDB][]:
+
+    CREATE
+      [DEFINER "=" {user | CURRENT_USER}]
+      [SCHEMA_BINDING "=" {ON | OFF}]
+      VIEW
+
 [Spark][]:
 
     CREATE [OR REPLACE] [[GLOBAL] TEMPORARY] VIEW [IF NOT EXISTS]
@@ -80,6 +87,7 @@ _No support for CREATE VIEW._
 [pl/sql]: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-VIEW.html
 [postgresql]: https://www.postgresql.org/docs/current/sql-createview.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_VIEW.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-definition-language-ddl/create-view.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-create-view.html
 [sqlite]: https://www.sqlite.org/lang_createview.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/create-view-transact-sql?view=sql-server-ver15
