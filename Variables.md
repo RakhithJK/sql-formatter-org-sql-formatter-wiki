@@ -11,10 +11,15 @@
 - [PL/SQL][]: `&name` or `&&name` substitution variables (and `:name` bind variables - see [parameters][]).
 - [PostgreSQL][]: identifier syntax (only in PL/pgSQL).
 - Redshift: _N/A_
+- SingleStoreDB:<sup>1</sup> `@name` (where the name consists of alphanumeric characters, `_`, and `$`), `` @`var name` ``
 - [Spark][]: `${name}` Like with Hive, these are substitution variables.
 - SQLite: _N/A_
 - [Transact-SQL][]: `@name` (using identifier syntax for name)
 - Trino: _N/A_
+
+Notes:
+
+1. Tested SingleStoreDB syntax manually. Found no documentation of variable syntax.
 
 [parameters]: ./parameters
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/procedural-language
