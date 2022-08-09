@@ -10,6 +10,7 @@ Reference of SQL syntax variations.
 - [Parameters](./parameters)
 - [Variables](./variables)
 - [Strings](./strings)
+- [Operators](./operators)
 - [Arrays and Maps](./arrays-and-maps)
 
 ## Queries
