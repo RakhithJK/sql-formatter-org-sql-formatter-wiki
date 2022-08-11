@@ -63,7 +63,7 @@ Other than that, the following dialects support everything else:
 
     WINDOW identifier ["," WINDOW identifier ...]
 
-[DB2][], [MariaDB][], [PL/SQL][], [Redshift][] don't support WINDOW clause.
+[DB2][], [MariaDB][], [PL/SQL][], [Redshift][], [SingleStoreDB][] don't support WINDOW clause.
 Though they do support window functions.
 
 [sql standard]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_7_11_window_clause
@@ -76,6 +76,7 @@ Though they do support window functions.
 [pl/sql]: https://docs.oracle.com/database/121/SQLRF/queries001.htm#SQLRF52327
 [postgresql]: https://www.postgresql.org/docs/current/sql-select.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_SELECT_synopsis.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/select.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html
 [transact-sql]: https://docs.microsoft.com/en-US/sql/t-sql/queries/select-window-transact-sql?view=sql-server-ver16&viewFallbackFrom=sql-server-ver15
