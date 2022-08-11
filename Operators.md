@@ -18,10 +18,12 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - [Comparison operators][ssdb-comp]: `<=>` (NULL-safe equal operator)
 - [Bitwise operators][ssdb-bit]: `&`, `|`, `^`, `~`, `>>`, `<<`
 - Boolean operators:<sup>1</sup> `&&`, `||`
+- [Variable assignment][ssdb-var]:<sup>2</sup> `:=`
 
 Notes:
 
 1. Tested SingleStoreDB boolean operators manually. Found no docs for these.
+2. SingleStoreDB only clearly documents the use of `=` operator for assignment, but testing shows that `:=` works as well (the docs also contain a lonely example that uses the `:=` syntax).
 
 [sql-comp]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#comp-op
 [sql-bool]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#boolean-value-expression
@@ -33,3 +35,4 @@ Notes:
 [string concatenation]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_6_28_string_value_expression
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
+[ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
