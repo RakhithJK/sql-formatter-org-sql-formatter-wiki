@@ -11,7 +11,7 @@
 - [PL/SQL][]: `&name` or `&&name` substitution variables (and `:name` bind variables - see [parameters][]).
 - [PostgreSQL][]: identifier syntax (only in PL/pgSQL).
 - Redshift: _N/A_
-- SingleStoreDB:<sup>1</sup> `@name` (where the name consists of alphanumeric characters, `_`, and `$`), `` @`var name` ``
+- [SingleStoreDB][]:<sup>1</sup> `@name` (where the name consists of alphanumeric characters, `_`, and `$`), `` @`var name` ``
 - [Spark][]: `${name}` Like with Hive, these are substitution variables.
 - SQLite: _N/A_
 - [Transact-SQL][]: `@name` (using identifier syntax for name)
@@ -19,7 +19,7 @@
 
 Notes:
 
-1. Tested SingleStoreDB syntax manually. Found no documentation of variable syntax.
+1. Tested SingleStoreDB syntax manually. Found no full documentation of variable syntax.
 
 [parameters]: ./parameters
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/procedural-language
@@ -30,5 +30,6 @@ Notes:
 [mysql]: https://dev.mysql.com/doc/refman/8.0/en/user-variables.html
 [pl/sql]: https://docs.oracle.com/en/database/oracle/oracle-database/21/sqpug/using-substitution-variables-sqlplus.html#GUID-0BEEC1D7-876B-495C-9327-17037652D3D2
 [postgresql]: https://www.postgresql.org/docs/current/sql-declare.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
 [spark]: https://stackoverflow.com/questions/65019868/how-to-use-variables-in-sql-queries
 [transact-sql]: https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-identifiers?view=sql-server-ver15
