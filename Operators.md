@@ -1,8 +1,8 @@
 All dialects support the following standard operators:
 
+- [Arithmetic][sql-math]: `+`, `-`, `*`, `/`
 - [Comparison][sql-comp]: `=`, `>`, `>=`, `<`, `<=`, `<>`, `!=`
-- [Boolean][sql-bool]: `AND`, `OR`, `NOT`, `IS`, `IS NOT`
-- [Math][sql-math]: `+`, `-`, `*`, `/`
+- [Logical][sql-bool]: `AND`, `OR`, `NOT`, `IS`, `IS NOT`
 
 The standard also defines operators that aren't supported a lot in actual implementations:
 
@@ -15,35 +15,35 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 
 #### [MariaDB][]:
 
-- Comparison: `<=>` (NULL-safe equal operator)
-- Bitwise: `&`, `|`, `^`, `~`, `>>`, `<<`
-- Boolean: `&&`, `||`, `XOR`, `!`
-- Assignment: `:=`
 - Arithmetic: `%`, `MOD`, `DIV`
+- Assignment: `:=`
+- Bitwise: `&`, `|`, `^`, `~`, `>>`, `<<`
+- Comparison: `<=>` (NULL-safe equal operator)
+- Logical: `&&`, `||`, `XOR`, `!`
 
 #### [MySQL][]:
 
-- Comparison: `<=>` (NULL-safe equal operator)
-- Bitwise: `&`, `|`, `^`, `~`, `>>`, `<<`
-- Logical: `&&`, `||`, `XOR`, `!`
-- Assignment: `:=`
-- JSON: `->`, `->>`
 - Arithmetic: `%`, `MOD`, `DIV`
+- Assignment: `:=`
+- Bitwise: `&`, `|`, `^`, `~`, `>>`, `<<`
+- Comparison: `<=>` (NULL-safe equal operator)
+- JSON: `->`, `->>`
+- Logical: `&&`, `||`, `XOR`, `!`
 
 #### SingleStoreDB:
 
-- [Comparison][ssdb-comp]: `<=>` (NULL-safe equal operator)
-- [Bitwise][ssdb-bit]: `&`, `|`, `^`, `~`, `>>`, `<<`
-- Logical:<sup>1</sup> `&&`, `||`
 - [Assignment][ssdb-var]:<sup>2</sup> `:=`
+- [Bitwise][ssdb-bit]: `&`, `|`, `^`, `~`, `>>`, `<<`
+- [Comparison][ssdb-comp]: `<=>` (NULL-safe equal operator)
+- Logical:<sup>1</sup> `&&`, `||`
 
 #### [SQLite][]:
 
-- bitwise: `~`, `&`, `|`, `<<`, `>>`
-- arithmetic: `%` (modulus)
-- comparison: `==`
-- string concatenation: `||`
+- Arithmetic: `%`
+- Bitwise: `~`, `&`, `|`, `<<`, `>>`
+- Comparison: `==`
 - JSON: `->`, `->>`
+- String concatenation: `||`
 
 Notes:
 
