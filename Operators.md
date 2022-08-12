@@ -20,6 +20,14 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - Boolean operators:<sup>1</sup> `&&`, `||`
 - [Variable assignment][ssdb-var]:<sup>2</sup> `:=`
 
+#### [SQLite:][sqlite]
+
+- bitwise: `~`, `&`, `|`, `<<`, `>>`
+- arithmetic: `%` (modulus)
+- comparison: `==`
+- string concatenation: `||`
+- JSON: `->`, `->>`
+
 Notes:
 
 1. Tested SingleStoreDB boolean operators manually. Found no docs for these.
@@ -36,3 +44,4 @@ Notes:
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
 [ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
+[sqlite]: https://www.sqlite.org/lang_expr.html#operators_and_parse_affecting_attributes
