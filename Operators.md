@@ -13,14 +13,23 @@ The standard also defines operators that aren't supported a lot in actual implem
 
 Below only additional non-standard operators are listed (the uncommon ones (`::`, `->`, `||`, `..`) are assumed to be unsupported unless mentioned otherwise):
 
+#### [MySQL][]:
+
+- Comparison: `<=>` (NULL-safe equal operator)
+- Bitwise: `&`, `|`, `^`, `~`, `>>`, `<<`
+- Boolean: `&&`, `||`, `XOR`, `!`
+- Assignment: `:=`
+- JSON: `->`, `->>`
+- Arithmetic: `%`, `MOD`, `DIV`
+
 #### SingleStoreDB:
 
-- [Comparison operators][ssdb-comp]: `<=>` (NULL-safe equal operator)
-- [Bitwise operators][ssdb-bit]: `&`, `|`, `^`, `~`, `>>`, `<<`
-- Boolean operators:<sup>1</sup> `&&`, `||`
-- [Variable assignment][ssdb-var]:<sup>2</sup> `:=`
+- [Comparison][ssdb-comp]: `<=>` (NULL-safe equal operator)
+- [Bitwise][ssdb-bit]: `&`, `|`, `^`, `~`, `>>`, `<<`
+- Boolean:<sup>1</sup> `&&`, `||`
+- [Assignment][ssdb-var]:<sup>2</sup> `:=`
 
-#### [SQLite:][sqlite]
+#### [SQLite][]:
 
 - bitwise: `~`, `&`, `|`, `<<`, `>>`
 - arithmetic: `%` (modulus)
@@ -41,6 +50,7 @@ Notes:
 [ada]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_21_3_embedded_sql_ada_program
 [pascal]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_21_8_embedded_sql_pascal_program
 [string concatenation]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_6_28_string_value_expression
+[mysql]: https://dev.mysql.com/doc/refman/8.0/en/non-typed-operators.html
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
 [ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
