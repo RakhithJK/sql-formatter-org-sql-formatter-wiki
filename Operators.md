@@ -55,6 +55,13 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - Comparison: `==`
 - String concatenation: `||`
 
+#### [PL/SQL](https://docs.oracle.com/database/121/SQLRF/operators.htm):
+
+- [Assignment][plsql-var]: `:=`
+- [Comparison][plsql-comp]: `^=`
+- [Named arguments][plsql-arg]: `=>`
+- String concatenation: `||`
+
 #### SingleStoreDB:
 
 - [Assignment][ssdb-var]:<sup>2</sup> `:=`
@@ -87,6 +94,9 @@ Notes:
 [db2-comp]: https://www.ibm.com/docs/en/i/7.2?topic=clause-comparison-operators
 [mariadb]: https://mariadb.com/kb/en/operators/
 [mysql]: https://dev.mysql.com/doc/refman/8.0/en/non-typed-operators.html
+[plsql-comp]: https://docs.oracle.com/database/121/SQLRF/conditions002.htm
+[plsql-arg]: https://docs.oracle.com/database/121/SQLRF/expressions008.htm
+[plsql-var]: https://docs.oracle.com/cd/B19306_01/appdev.102/b14261/fundamentals.htm
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
 [ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
