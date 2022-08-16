@@ -55,10 +55,11 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - Comparison: `==`
 - String concatenation: `||`
 
-#### [PL/SQL](https://docs.oracle.com/database/121/SQLRF/operators.htm):
+#### [PL/SQL](https://docs.oracle.com/database/121/SQLRF/operators.htm):<sup>3</sup>
 
 - [Assignment][plsql-var]: `:=`
 - [Comparison][plsql-comp]: `^=`
+- [FOR loop range][plsql-for]: `..`
 - [Named arguments][plsql-arg]: `=>`
 - String concatenation: `||`
 
@@ -81,6 +82,7 @@ Notes:
 
 1. Tested SingleStoreDB boolean operators manually. Found no docs for these.
 2. SingleStoreDB only clearly documents the use of `=` operator for assignment, but testing shows that `:=` works as well (the docs also contain a lonely example that uses the `:=` syntax).
+3. Tested on [Oracle Live SQL playground](https://livesql.oracle.com/apex/f?p=590:1:5443282639708::NO:RP::) the following operators: `>>`, `<<`, `**`, `~=`. All of them produced an error.
 
 [sql-comp]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#comp-op
 [sql-bool]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#boolean-value-expression
@@ -97,6 +99,7 @@ Notes:
 [plsql-comp]: https://docs.oracle.com/database/121/SQLRF/conditions002.htm
 [plsql-arg]: https://docs.oracle.com/database/121/SQLRF/expressions008.htm
 [plsql-var]: https://docs.oracle.com/cd/B19306_01/appdev.102/b14261/fundamentals.htm
+[plsql-for]: https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/FOR-LOOP-statement.html
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
 [ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
