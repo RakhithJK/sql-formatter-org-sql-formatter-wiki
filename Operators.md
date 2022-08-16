@@ -74,6 +74,7 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - [Network address][psql-net]: `<<`, `>>`, `<<=`, `>>=`, `&&`, `~`, `&`, `|`
 - [Pattern matching][psql-like]: `~~`, `~~*`, `!~~`, `!~~*`
 - [Posix Regex][psql-regex]: `~`, `~*`, `!~`, `!~*`
+- [Range/multirange][psql-range]: `-|-`
 - String concatenation: `||`
 - [Text search][psql-txt]: `@@`, `@@@`, `||`, `&&`, `!!`, `<->`, `@>`, `<@`
 - [Type cast][psql-cast]: `::`
@@ -150,6 +151,7 @@ Notes:
 [psql-cast]: https://www.postgresql.org/docs/current/sql-createcast.html
 [psql-func]: https://www.postgresql.org/docs/current/sql-syntax-calling-funcs.html
 [psql-assign]: https://www.postgresql.org/docs/9.4/plpgsql-statements.html
+[psql-range]: https://www.postgresql.org/docs/current/functions-range.html
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
 [ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
