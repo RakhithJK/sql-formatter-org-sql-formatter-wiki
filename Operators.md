@@ -63,6 +63,16 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - [Named arguments][plsql-arg]: `=>`
 - String concatenation: `||`
 
+#### PostgreSQL:
+
+TODO
+
+#### [Redshift](https://docs.aws.amazon.com/redshift/latest/dg/r_compound_expressions.html):
+
+- Arithmetic: `^`, `%`, `@` (absolute value), `|/` (square root) `||/` cube root
+- Bitwise: `&`, `|`, `#`, `~`, `<<`, `>>`
+- String concatenation: `||`
+
 #### SingleStoreDB:
 
 - [Assignment][ssdb-var]:<sup>2</sup> `:=`
