@@ -13,6 +13,11 @@ The standard also defines operators that aren't supported a lot in actual implem
 
 Below only additional non-standard operators are listed (the uncommon ones (`::`, `->`, `||`, `..`) are assumed to be unsupported unless mentioned otherwise):
 
+#### [BigQuery](https://cloud.google.com/bigquery/docs/reference/standard-sql/operators):
+
+- Bitwise: `&`, `|`, `^`, `~`, `<<`, `>>`
+- String/Array concatenation: `||`
+
 #### [MariaDB][]:
 
 - Arithmetic: `%`, `MOD`, `DIV`
