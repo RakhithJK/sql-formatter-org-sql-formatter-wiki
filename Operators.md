@@ -63,9 +63,20 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - [Named arguments][plsql-arg]: `=>`
 - String concatenation: `||`
 
-#### PostgreSQL:
+#### [PostgreSQL][]:
 
-TODO
+- [Arithmetic][psql-math]: `%`, `^`, `|/` (square root), `||/` (cube root), `@` (abs value)
+- [Assignment][psql-assign]: `:=`
+- [Bitwise][psql-math]: `&`, `|`, `#`, `~`, `>>`, `<<`
+- [Geometric][psql-geo]: `@-@`, `@@`, `#`, `##`, `<->`, `@>`, `<@`, `&&`, `<<`, `>>`, `&<`, `&>`, `<<|`, `|>>`, `&<|`, `|&>`, `<^`, `>^`, `?#`, `?-`, `?|`, `?-|`, `?||`, `~=`
+- [JSON][psql-json]: `->`, `->>`, `#>`, `#>>`, `@>`, `?`, `?|`, `?&`, `||`, `#-`, `@?`, `@@`
+- [Named function params][psql-func]: `=>`
+- [Network address][psql-net]: `<<`, `>>`, `<<=`, `>>=`, `&&`, `~`, `&`, `|`
+- [Pattern matching][psql-like]: `~~`, `~~*`, `!~~`, `!~~*`
+- [Posix Regex][psql-regex]: `~`, `~*`, `!~`, `!~*`
+- String concatenation: `||`
+- [Text search][psql-txt]: `@@`, `@@@`, `||`, `&&`, `!!`, `<->`, `@>`, `<@`
+- [Type cast][psql-cast]: `::`
 
 #### [Redshift](https://docs.aws.amazon.com/redshift/latest/dg/r_compound_expressions.html):
 
@@ -128,6 +139,17 @@ Notes:
 [plsql-arg]: https://docs.oracle.com/database/121/SQLRF/expressions008.htm
 [plsql-var]: https://docs.oracle.com/cd/B19306_01/appdev.102/b14261/fundamentals.htm
 [plsql-for]: https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/FOR-LOOP-statement.html
+[postgresql]: https://www.postgresql.org/docs/14/functions.html
+[psql-math]: https://www.postgresql.org/docs/14/functions-math.html
+[psql-like]: https://www.postgresql.org/docs/14/functions-matching.html#FUNCTIONS-LIKE
+[psql-regex]: https://www.postgresql.org/docs/14/functions-matching.html#FUNCTIONS-POSIX-REGEXP
+[psql-net]: https://www.postgresql.org/docs/14/functions-net.html
+[psql-geo]: https://www.postgresql.org/docs/14/functions-geometry.html
+[psql-txt]: https://www.postgresql.org/docs/14/functions-textsearch.html
+[psql-json]: https://www.postgresql.org/docs/14/functions-json.html
+[psql-cast]: https://www.postgresql.org/docs/current/sql-createcast.html
+[psql-func]: https://www.postgresql.org/docs/current/sql-syntax-calling-funcs.html
+[psql-assign]: https://www.postgresql.org/docs/9.4/plpgsql-statements.html
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
 [ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
