@@ -78,7 +78,7 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - [Network address][psql-net]: `<<`, `>>`, `<<=`, `>>=`, `&&`, `~`, `&`, `|`
 - [Pattern matching][psql-like]: `~~`, `~~*`, `!~~`, `!~~*`
 - [Posix Regex][psql-regex]: `~`, `~*`, `!~`, `!~*`
-- [Range/multirange][psql-range]: `-|-`
+- [Range/multirange][psql-range]: `@>`, `<@`, `&&`, `<<`, `>>`, `&<`, `&>`, `-|-`, 
 - String concatenation: `||`
 - [Text search][psql-txt]: `@@`, `@@@`, `||`, `&&`, `!!`, `<->`, `@>`, `<@`
 - [Type cast][psql-cast]: `::`
