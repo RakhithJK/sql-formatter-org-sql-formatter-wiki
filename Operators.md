@@ -100,6 +100,12 @@ Same as Hive.
 - [Compound][tsql-compound]: `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `|=`, `^=`
 - [Scope resolution][tsql-scope]: `::`
 
+#### [Trino][]:
+
+- Arithmetic: `%`
+- [Lambda expression][trino-lambda]: `->`
+- String concatenation: `||`
+
 Notes:
 
 1. Tested SingleStoreDB boolean operators manually. Found no docs for these.
@@ -131,3 +137,5 @@ Notes:
 [tsql-bit]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/bitwise-operators-transact-sql?view=sql-server-ver16
 [tsql-compound]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/compound-operators-transact-sql?view=sql-server-ver16
 [tsql-comp]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/comparison-operators-transact-sql?view=sql-server-ver16
+[trino]: https://trino.io/docs/current/functions/list.html#id1
+[trino-lambda]: https://trino.io/docs/current/functions/lambda.html#lambda-expressions
