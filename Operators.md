@@ -55,12 +55,16 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - Comparison: `==`
 - String concatenation: `||`
 
-#### [PL/SQL](https://docs.oracle.com/database/121/SQLRF/operators.htm):<sup>3</sup>
+#### [PL/SQL](https://docs.oracle.com/cd/E11882_01/appdev.112/e25519/fundamentals.htm#LNPLS189):
 
+- Arithmetic: `**`<sup>3</sup>
 - [Assignment][plsql-var]: `:=`
-- [Comparison][plsql-comp]: `^=`
+- Attribute indicator: `%`
+- [Comparison][plsql-comp]: `^=`, `~=`<sup>3</sup>
 - [FOR loop range][plsql-for]: `..`
+- [Label delimiters][plsql-label]: `<<`, `>>`
 - [Named arguments][plsql-arg]: `=>`
+- Remote access indicator: `@`
 - String concatenation: `||`
 
 #### [PostgreSQL][]:
@@ -122,7 +126,7 @@ Notes:
 
 1. Tested SingleStoreDB boolean operators manually. Found no docs for these.
 2. SingleStoreDB only clearly documents the use of `=` operator for assignment, but testing shows that `:=` works as well (the docs also contain a lonely example that uses the `:=` syntax).
-3. Tested on [Oracle Live SQL playground](https://livesql.oracle.com/apex/f?p=590:1:5443282639708::NO:RP::) the following operators: `>>`, `<<`, `**`, `~=`. All of them produced an error.
+3. Tested on [Oracle Live SQL playground](https://livesql.oracle.com/apex/f?p=590:1:5443282639708::NO:RP::) the following operators: `**`, `~=`. Both of them produced an error.
 
 [sql-comp]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#comp-op
 [sql-bool]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#boolean-value-expression
@@ -140,6 +144,7 @@ Notes:
 [plsql-arg]: https://docs.oracle.com/database/121/SQLRF/expressions008.htm
 [plsql-var]: https://docs.oracle.com/cd/B19306_01/appdev.102/b14261/fundamentals.htm
 [plsql-for]: https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/FOR-LOOP-statement.html
+[plsql-label]: https://docs.oracle.com/cd/B19306_01/appdev.102/b14261/goto_statement.htm
 [postgresql]: https://www.postgresql.org/docs/14/functions.html
 [psql-math]: https://www.postgresql.org/docs/14/functions-math.html
 [psql-like]: https://www.postgresql.org/docs/14/functions-matching.html#FUNCTIONS-LIKE
