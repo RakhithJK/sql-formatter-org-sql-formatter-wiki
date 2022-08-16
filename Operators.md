@@ -18,6 +18,12 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - Bitwise: `&`, `|`, `^`, `~`, `<<`, `>>`
 - String/Array concatenation: `||`
 
+#### [DB2](https://www.ibm.com/docs/en/db2/9.7?topic=elements-expressions):
+
+- [Arithmetic][db2-math]: `**`
+- [Comparison][db2-comp]: `¬=`, `¬>`, `!>`, `¬<`, `!<`
+- String concatenation: `CONCAT`, `||`
+
 #### [MariaDB][]:
 
 - Arithmetic: `%`, `MOD`, `DIV`
@@ -63,6 +69,8 @@ Notes:
 [ada]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_21_3_embedded_sql_ada_program
 [pascal]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_21_8_embedded_sql_pascal_program
 [string concatenation]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_6_28_string_value_expression
+[db2-math]: https://www.ibm.com/docs/en/i/7.2?topic=clause-expressions-in-where
+[db2-comp]: https://www.ibm.com/docs/en/i/7.2?topic=clause-comparison-operators
 [mariadb]: https://mariadb.com/kb/en/operators/
 [mysql]: https://dev.mysql.com/doc/refman/8.0/en/non-typed-operators.html
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
