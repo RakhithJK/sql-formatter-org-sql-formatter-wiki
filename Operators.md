@@ -80,6 +80,10 @@ TODO
 - [Comparison][ssdb-comp]: `<=>` (NULL-safe equal operator)
 - Logical:<sup>1</sup> `&&`, `||`
 
+#### [Spark](https://spark.apache.org/docs/3.3.0/sql-migration-guide.html#compatibility-with-apache-hive):
+
+Same as Hive.
+
 #### [SQLite][]:
 
 - Arithmetic: `%`
