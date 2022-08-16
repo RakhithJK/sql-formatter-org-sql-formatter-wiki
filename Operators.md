@@ -98,7 +98,9 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 
 #### [Spark](https://spark.apache.org/docs/3.3.0/sql-migration-guide.html#compatibility-with-apache-hive):
 
-Same as Hive.
+Same as Hive. Additionally (perhaps also in Hive?):
+
+- [Lambda expression][spark-lambda]: `->`
 
 #### [SQLite][]:
 
@@ -160,6 +162,7 @@ Notes:
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
 [ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
+[spark-lambda]: https://github.com/sql-formatter-org/sql-formatter/issues/176
 [sqlite]: https://www.sqlite.org/lang_expr.html#operators_and_parse_affecting_attributes
 [tsql-math]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/arithmetic-operators-transact-sql?view=sql-server-ver16
 [tsql-scope]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/scope-resolution-operator-transact-sql?view=sql-server-ver16
