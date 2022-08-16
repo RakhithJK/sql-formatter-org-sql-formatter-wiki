@@ -49,6 +49,12 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - JSON: `->`, `->>`
 - Logical: `&&`, `||`, `XOR`, `!`
 
+#### [N1QL](https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/operators.html):
+
+- Arithmetic: `%`
+- Comparison: `==`
+- String concatenation: `||`
+
 #### SingleStoreDB:
 
 - [Assignment][ssdb-var]:<sup>2</sup> `:=`
