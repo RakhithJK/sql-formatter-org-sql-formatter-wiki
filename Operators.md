@@ -92,6 +92,14 @@ Same as Hive.
 - JSON: `->`, `->>`
 - String concatenation: `||`
 
+#### Transact-SQL:
+
+- [Arithmetic][tsql-math]: `%`
+- [Bitwise][tsql-bit]: `&`, `|`, `^`, `~`
+- [Comparison][tsql-comp]: `!<`, `!>`
+- [Compound][tsql-compound]: `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `|=`, `^=`
+- [Scope resolution][tsql-scope]: `::`
+
 Notes:
 
 1. Tested SingleStoreDB boolean operators manually. Found no docs for these.
@@ -118,3 +126,8 @@ Notes:
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
 [ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
 [sqlite]: https://www.sqlite.org/lang_expr.html#operators_and_parse_affecting_attributes
+[tsql-math]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/arithmetic-operators-transact-sql?view=sql-server-ver16
+[tsql-scope]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/scope-resolution-operator-transact-sql?view=sql-server-ver16
+[tsql-bit]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/bitwise-operators-transact-sql?view=sql-server-ver16
+[tsql-compound]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/compound-operators-transact-sql?view=sql-server-ver16
+[tsql-comp]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/comparison-operators-transact-sql?view=sql-server-ver16
