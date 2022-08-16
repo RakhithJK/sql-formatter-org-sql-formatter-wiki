@@ -18,7 +18,7 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - Bitwise: `&`, `|`, `^`, `~`, `<<`, `>>`
 - String/Array concatenation: `||`
 
-#### [DB2](https://www.ibm.com/docs/en/db2/9.7?topic=elements-expressions):
+#### [DB2](https://www.ibm.com/docs/en/i/7.2?topic=le-expressions):
 
 - [Arithmetic][db2-math]: `**`
 - [Comparison][db2-comp]: `¬=`, `¬>`, `!>`, `¬<`, `!<`
