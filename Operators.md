@@ -24,6 +24,14 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - [Comparison][db2-comp]: `¬=`, `¬>`, `!>`, `¬<`, `!<`
 - String concatenation: `CONCAT`, `||`
 
+#### [Hive](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF):
+
+- Arithmetic: `%`, `DIV`
+- Bitwise: `~`, `^`, `|`, `&`
+- Comparison: `==`, `<=>` (NULL-safe equal operator)
+- Logical: `!`
+- String concatenation: `||`
+
 #### [MariaDB][]:
 
 - Arithmetic: `%`, `MOD`, `DIV`
