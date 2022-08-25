@@ -17,12 +17,12 @@ The real world implementations have lots of variation:
 - [Hive][]: `'..'`, `".."` (backslash `\` used for escaping)
 - [MariaDB][]:
   - `'..'`, `".."`<sup>2</sup> (backslash `\`<sup>1</sup> or repeated single-quote `''` used for escaping)
-  - `x'..'`, `X'..'` [hex string][mariadb-hex]
-  - `b'..'`, `B'..'` a binary string
+  - `x'..'`, `X'..'` [hex string][mariadb-hex]<sup>6</sup>
+  - `b'..'`, `B'..'` a binary string<sup>6</sup>
 - [MySQL][]:
   - `'..'`, `".."`<sup>2</sup> (backslash `\`<sup>1</sup> or repeated quote (`''` or `""`) used for escaping)
-  - `x'..'`, `X'..'` [hex string][mysql-hex]
-  - `N'..'`, `n'..'` a string using a natural character set
+  - `x'..'`, `X'..'` [hex string][mysql-hex]<sup>6</sup>
+  - `N'..'`, `n'..'` a string using a natural character set<sup>6</sup>
 - [N1QL][]: `".."` (backslash `\` used for escaping)
 - [PL/SQL][]:
   - `'..'` (two single quotes `''` are used for escaping)
@@ -39,8 +39,8 @@ The real world implementations have lots of variation:
 - [Redshift][]: `'..'`
 - SingleStoreDB:<sup>5</sup>
   - `'..'`, `".."` (backslash `\` or repeated quote (`''` or `""`) used for escaping)
-  - `x'..'`, `X'..'` hex string
-  - `b'..'`, `B'..'` a binary string
+  - `x'..'`, `X'..'` hex string<sup>6</sup>
+  - `b'..'`, `B'..'` a binary string<sup>6</sup>
 - [Spark][]:
   - `'..'`, `".."` (backslash `\` used for escaping)
   - `r'..'`, `r".."`, `R'..'`, `R".."` raw string (no escaping)
@@ -64,6 +64,7 @@ The real world implementations have lots of variation:
 3. if the QUOTED_IDENTIFIER option has been set OFF.
 4. SQLite sometimes [bends its quoting rules.][sqlite-note] It treats double-quoted identifiers as strings when they appear in the context where strings are expected, but identifiers are not.
 5. Tested SingleStoreDB manually. Haven't found any actual documentation about string syntax.
+6. Only single-quoted versions are supported.
 
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/lexical#string_and_bytes_literals
 [db2]: https://www.ibm.com/docs/en/db2/9.7?topic=elements-constants
