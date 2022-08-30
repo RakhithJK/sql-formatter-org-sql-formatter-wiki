@@ -23,6 +23,7 @@ This is however only supported by some dialects:
 
 - [PostgreSQL](https://www.postgresql.org/docs/8.0/sql-syntax.html#SQL-SYNTAX-COMMENTS)
 - [Transact-SQL](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/slash-star-comment-transact-sql?view=sql-server-ver16)
+- MariaDB and MySQL docs mention that nested comments might be supported in some places, but their support is deprecated and one is advised not to use them.
 
 ## Hash comments
 
