@@ -12,6 +12,7 @@ Reference of SQL syntax variations.
 - [Strings](./strings)
 - [Operators](./operators)
 - [Arrays and Maps](./arrays-and-maps)
+- [Comments](./comments)
 
 ## Queries
 
