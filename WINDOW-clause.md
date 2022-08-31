@@ -29,6 +29,10 @@
       | EXCLUDE TIES
       | EXCLUDE NO OTHERS
 
+And the following syntax for [window functions][sql-win-func]:
+
+    function OVER { window_name | window_specification }
+
 No dialect supports `COLLATE` in `PARTITION BY`.
 Other than that, the following dialects support everything else:
 
@@ -67,6 +71,7 @@ Other than that, the following dialects support everything else:
 Though they do support window functions.
 
 [sql standard]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_7_11_window_clause
+[sql-win-func]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_6_10_window_function
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/window-function-calls#def_window_spec
 [db2]: https://www.ibm.com/docs/en/db2/9.7?topic=queries-subselect
 [hive]: https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Select
