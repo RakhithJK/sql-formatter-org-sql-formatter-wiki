@@ -2,6 +2,12 @@
 
     WINDOW { identifier AS "(" window_specification ")" } ["," ...]
 
+and the following syntax for [window functions][sql-win-func]:
+
+    function_call OVER { window_name | "(" window_specification ")" }
+
+where `window_specification` in both is as follows:
+
     window_specification:
       [identifier]
       [PARTITION BY { column [COLLATE collation] } ["," ...]]
@@ -29,23 +35,27 @@
       | EXCLUDE TIES
       | EXCLUDE NO OTHERS
 
-And the following syntax for [window functions][sql-win-func]:
-
-    function OVER { window_name | window_specification }
-
 No dialect supports `COLLATE` in `PARTITION BY`.
 Other than that, the following dialects support everything else:
 
-- [BigQuery][]
-- [Hive][]
-- [MySQL][]
-- [Transact-SQL][]
-- [N1QL][] <sup>1</sup>
-- [PostgreSQL][] <sup>1</sup>
-- [SQLite][] <sup>1</sup>
-- [Trino][] <sup>1, 2</sup>
+|                           | WINDOW clause      | Window function    |
+|---------------------------|--------------------|--------------------|
+| [BigQuery][]              | :heavy_check_mark: | :heavy_check_mark: |
+| [DB2][]                   |                    | :heavy_check_mark: |
+| [Hive][]                  | :heavy_check_mark: | :heavy_check_mark: |
+| [MySQL][]                 | :heavy_check_mark: | :heavy_check_mark: |
+| [MariaDB][]               |                    | :heavy_check_mark: |
+| [N1QL][]<sup>1</sup>      | :heavy_check_mark: | :heavy_check_mark: |
+| [PL/SQL][]                |                    | :heavy_check_mark: |
+| [PostgreSQL][]<sup>1</sup>| :heavy_check_mark: | :heavy_check_mark: |
+| [Redshift][]              |                    | :heavy_check_mark: |
+| [SingleStoreDB][]         |                    | :heavy_check_mark: |
+| [Spark][]                 | :heavy_check_mark: | :heavy_check_mark: |
+| [SQLite][]<sup>1</sup>    | :heavy_check_mark: | :heavy_check_mark: |
+| [Trino][]<sup>1, 2</sup>  | :heavy_check_mark: | :heavy_check_mark: |
+| [Transact-SQL][]          | :heavy_check_mark: | :heavy_check_mark: |
 
-1.  These dialects support an extra `GROUPS` option in `frame_units`:
+1. These dialects support an extra `GROUPS` option in `frame_units`:
 
         frame_units:
           ROWS | RANGE | GROUPS
@@ -63,25 +73,18 @@ Other than that, the following dialects support everything else:
 
     [Trino][] does not support `frame_exclusion`.
 
-[Spark][] has a rudimentary WINDOW support:
-
-    WINDOW identifier ["," WINDOW identifier ...]
-
-[DB2][], [MariaDB][], [PL/SQL][], [Redshift][], [SingleStoreDB][] don't support WINDOW clause.
-Though they do support window functions.
-
 [sql standard]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_7_11_window_clause
 [sql-win-func]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_6_10_window_function
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/window-function-calls#def_window_spec
-[db2]: https://www.ibm.com/docs/en/db2/9.7?topic=queries-subselect
+[db2]: https://www.ibm.com/docs/en/db2/11.5?topic=expressions-olap-specification
 [hive]: https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Select
-[mariadb]: https://mariadb.com/kb/en/select/
+[mariadb]: https://mariadb.com/kb/en/window-functions-overview/
 [mysql]: https://dev.mysql.com/doc/refman/8.0/en/select.html
 [n1ql]: https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/select-syntax.html#window-clause
-[pl/sql]: https://docs.oracle.com/database/121/SQLRF/queries001.htm#SQLRF52327
+[pl/sql]: https://docs.oracle.com/cd/E11882_01/server.112/e41084/functions004.htm#SQLRF06174
 [postgresql]: https://www.postgresql.org/docs/current/sql-select.html
-[redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_SELECT_synopsis.html
-[singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/select.html
+[redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_Window_function_synopsis.html
+[singlestoredb]: https://docs.singlestore.com/managed-service/en/developer-resources/functional-extensions/working-with-window-functions.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html
 [transact-sql]: https://docs.microsoft.com/en-US/sql/t-sql/queries/select-window-transact-sql?view=sql-server-ver16&viewFallbackFrom=sql-server-ver15
