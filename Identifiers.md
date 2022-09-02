@@ -25,19 +25,19 @@ SQL standard specifies double-quotes `".."` for delimited identifiers.
 There is a considerable variation in implementations:
 
 - `` `..` `` [BigQuery][]
-- `".."` [DB2][]
-- `` `..` `` [Hive][]
-- `` `..` ``, (`".."`<sup>1</sup>, `[..]`<sup>2</sup>) [MariaDB][]
-- `` `..` ``, (`".."`<sup>1</sup>) [MySQL][]
+- `".."` [DB2][] (repeated `"` used for escaping)
+- `` `..` `` [Hive][] (repeated `` ` `` used for escaping)
+- `` `..` ``, (`".."`<sup>1</sup>, `[..]`<sup>2</sup>) [MariaDB][] (repeated `` ` `` used for escaping)
+- `` `..` ``, (`".."`<sup>1</sup>) [MySQL][] (repeated `` ` `` used for escaping)
 - `` `..` `` SingleStoreDB<sup>5</sup>
 - `` `..` `` [N1QL][]
-- `".."` [PL/SQL][]
-- `".."`, `U&".."` [PostgreSQL][]
-- `".."` [Redshift][]
-- `` `..` `` [Spark][]
-- `".."`, `` `..` ``, `[..]` [SQLite][sqlite-keywords]
-- `".."`<sup>3</sup>, `[..]` [Transact-SQL][]
-- `".."`<sup>4</sup> [Trino][]
+- `".."` [PL/SQL][pl/sql-quotes] (escaping of quotes is not supported)
+- `".."`, `U&".."` [PostgreSQL][] (repeated `"` used for escaping)
+- `".."` [Redshift][] (repeated `"` used for escaping)
+- `` `..` `` [Spark][] (repeated `` ` `` used for escaping)
+- `".."`, `` `..` ``, `[..]` [SQLite][sqlite-keywords] (repeated `"` or `` ` `` used for escaping)
+- `".."`<sup>3</sup>, `[..]` [Transact-SQL][] (repeated `"` or `]` used for escaping)
+- `".."`<sup>4</sup> [Trino][] (repeated `"` used for escaping)
 
 Notes:
 
@@ -54,6 +54,7 @@ Notes:
 [mysql]: https://dev.mysql.com/doc/refman/8.0/en/identifiers.html
 [n1ql]: https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/identifiers.html
 [pl/sql]: https://docs.oracle.com/database/121/LNPLS/fundamentals.htm#LNPLS99973
+[pl/sql-quotes]: https://docs.oracle.com/cd/B19306_01/server.102/b14200/sql_elements008.htm
 [postgresql]: https://www.postgresql.org/docs/current/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_names.html
 [redshift-temp]: https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_NEW.html
