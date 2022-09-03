@@ -36,7 +36,7 @@ The real world implementations have lots of variation:
   - `$$..$$`, `$delim$..$delim$` dollar-quoted string with optional custom delimiters
   - `B'..'`, `b'..'` bit string
   - `X'..'`, `x'..'` hex string
-- [Redshift][]: `'..'`
+- [Redshift][]: `'..'` (two quotes `''` are used for escaping)
 - SingleStoreDB:<sup>5</sup>
   - `'..'`, `".."` (backslash `\` or repeated quote (`''` or `""`) used for escaping)
   - `x'..'`, `X'..'` hex string<sup>6</sup>
@@ -77,7 +77,7 @@ The real world implementations have lots of variation:
 [n1ql]: https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/literals.html#strings
 [pl/sql]: https://docs.oracle.com/cd/B19306_01/server.102/b14200/sql_elements003.htm#i42617
 [postgresql]: https://www.postgresql.org/docs/current/sql-syntax-lexical.html#SQL-SYNTAX-CONSTANTS
-[redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_Examples_with_character_types.html
+[redshift]: https://stackoverflow.com/questions/48000322/escaping-single-quotes-in-redshift-sql
 [spark]: https://spark.apache.org/docs/latest/sql-ref-literals.html#string-literal
 [sqlite]: https://www.sqlite.org/lang_expr.html#literal_values_constants_
 [sqlite-note]: https://www.sqlite.org/lang_keywords.html
