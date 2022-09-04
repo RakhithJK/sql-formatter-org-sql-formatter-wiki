@@ -53,6 +53,7 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 
 - Arithmetic: `%`
 - Comparison: `==`
+- [Object key-value separator][n1ql-obj]: `:`
 - String concatenation: `||`
 
 #### [PL/SQL](https://docs.oracle.com/cd/E11882_01/appdev.112/e25519/fundamentals.htm#LNPLS189):
@@ -122,6 +123,7 @@ Same as Hive. Additionally (perhaps also in Hive?):
 
 - Arithmetic: `%`
 - [Lambda expression][trino-lambda]: `->`
+- [Object key-value separator][trino-obj]: `:`
 - String concatenation: `||`
 
 Notes:
@@ -142,6 +144,7 @@ Notes:
 [db2-comp]: https://www.ibm.com/docs/en/i/7.2?topic=clause-comparison-operators
 [mariadb]: https://mariadb.com/kb/en/operators/
 [mysql]: https://dev.mysql.com/doc/refman/8.0/en/non-typed-operators.html
+[n1ql-obj]: https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/datatypes.html#objects
 [plsql-comp]: https://docs.oracle.com/database/121/SQLRF/conditions002.htm
 [plsql-arg]: https://docs.oracle.com/database/121/SQLRF/expressions008.htm
 [plsql-var]: https://docs.oracle.com/cd/B19306_01/appdev.102/b14261/fundamentals.htm
@@ -171,3 +174,4 @@ Notes:
 [tsql-comp]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/comparison-operators-transact-sql?view=sql-server-ver16
 [trino]: https://trino.io/docs/current/functions/list.html#id1
 [trino-lambda]: https://trino.io/docs/current/functions/lambda.html#lambda-expressions
+[trino-obj]: https://trino.io/docs/current/functions/json.html?highlight=json#json-object
