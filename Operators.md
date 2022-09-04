@@ -124,6 +124,7 @@ Same as Hive. Additionally (perhaps also in Hive?):
 - Arithmetic: `%`
 - [Lambda expression][trino-lambda]: `->`
 - [Object key-value separator][trino-obj]: `:`
+- [Row pattern syntax][trino-row]: `+`, `|`, `*`, `?`, `(`..`)`, `{-`..`-}`, `{n}`, `{m,n}`
 - String concatenation: `||`
 
 Notes:
@@ -175,3 +176,4 @@ Notes:
 [trino]: https://trino.io/docs/current/functions/list.html#id1
 [trino-lambda]: https://trino.io/docs/current/functions/lambda.html#lambda-expressions
 [trino-obj]: https://trino.io/docs/current/functions/json.html?highlight=json#json-object
+[trino-row]: https://trino.io/docs/current/sql/match-recognize.html#row-pattern-syntax
