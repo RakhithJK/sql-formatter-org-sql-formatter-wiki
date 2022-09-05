@@ -73,6 +73,7 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - [Arithmetic][psql-math]: `%`, `^`, `|/` (square root), `||/` (cube root), `@` (abs value)
 - [Assignment][psql-assign]: `:=`
 - [Bitwise][psql-math]: `&`, `|`, `#`, `~`, `>>`, `<<`
+- [Byte comparison][psql-byte]: `~>=~`, `~<=~`, `~>~`, `~<~`
 - [Geometric][psql-geo]: `@-@`, `@@`, `#`, `##`, `<->`, `@>`, `<@`, `&&`, `<<`, `>>`, `&<`, `&>`, `<<|`, `|>>`, `&<|`, `|&>`, `<^`, `>^`, `?#`, `?-`, `?|`, `?-|`, `?||`, `~=`
 - [JSON][psql-json]: `->`, `->>`, `#>`, `#>>`, `@>`, `?`, `?|`, `?&`, `||`, `#-`, `@?`, `@@`
 - [Named function params][psql-func]: `=>`
@@ -82,6 +83,7 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - [Range/multirange][psql-range]: `@>`, `<@`, `&&`, `<<`, `>>`, `&<`, `&>`, `-|-`, 
 - String concatenation: `||`
 - [Text search][psql-txt]: `@@`, `@@@`, `||`, `&&`, `!!`, `<->`, `@>`, `<@`
+- [Trigram/trigraph][psql-trgm]: `%`, `<%`, `%>`, `<<%`, `%>>`, `<->`, `<<->`, `<->>`, `<<<->`, `<->>>`
 - [Type cast][psql-cast]: `::`
 
 #### [Redshift](https://docs.aws.amazon.com/redshift/latest/dg/r_compound_expressions.html):
@@ -163,6 +165,8 @@ Notes:
 [psql-func]: https://www.postgresql.org/docs/current/sql-syntax-calling-funcs.html
 [psql-assign]: https://www.postgresql.org/docs/9.4/plpgsql-statements.html
 [psql-range]: https://www.postgresql.org/docs/current/functions-range.html
+[psql-trgm]: https://www.postgresql.org/docs/current/pgtrgm.html
+[psql-byte]: https://stackoverflow.com/questions/35807872/operator-in-postgres/35808554#35808554
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
 [ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
