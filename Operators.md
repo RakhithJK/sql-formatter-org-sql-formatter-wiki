@@ -91,6 +91,7 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - Arithmetic: `^`, `%`, `@` (absolute value), `|/` (square root) `||/` cube root
 - Bitwise: `&`, `|`, `#`, `~`, `<<`, `>>`
 - String concatenation: `||`
+- [Type cast](https://docs.aws.amazon.com/redshift/latest/dg/r_CAST_function.html): `::`
 
 #### SingleStoreDB:
 
