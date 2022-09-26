@@ -100,6 +100,13 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - [Comparison][ssdb-comp]: `<=>` (NULL-safe equal operator)
 - Logical:<sup>1</sup> `&&`, `||`
 
+#### [Snowflake][]:
+- [Arithmethic][snow-math]: `%`
+- [Generator][snow-generator]: `=>`
+- [Path][snow-path]: `:`
+- [String concatenation][snow-string]: `||`
+- [Type cast][snow-cast]: `::`
+
 #### [Spark](https://spark.apache.org/docs/3.3.0/sql-migration-guide.html#compatibility-with-apache-hive):
 
 Same as Hive. Additionally (perhaps also in Hive?):
@@ -168,6 +175,12 @@ Notes:
 [psql-range]: https://www.postgresql.org/docs/current/functions-range.html
 [psql-trgm]: https://www.postgresql.org/docs/current/pgtrgm.html
 [psql-byte]: https://stackoverflow.com/questions/35807872/operator-in-postgres/35808554#35808554
+[snowflake]: https://docs.snowflake.com/en/sql-reference/functions-all.html
+[snow-cast]: https://docs.snowflake.com/en/sql-reference/functions/cast.html#cast
+[snow-generator]: https://docs.snowflake.com/en/sql-reference/functions/generator.html#generator
+[snow-math]: https://docs.snowflake.com/en/sql-reference/operators-arithmetic.html
+[snow-path]: https://docs.snowflake.com/en/sql-reference/functions/get_path.html#get-path
+[snow-string]: https://docs.snowflake.com/en/sql-reference/functions/concat.html#concat
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
 [ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
