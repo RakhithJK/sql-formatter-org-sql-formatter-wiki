@@ -41,6 +41,9 @@ The real world implementations have lots of variation:
   - `'..'`, `".."` (backslash `\` or repeated quote (`''` or `""`) used for escaping)
   - `x'..'`, `X'..'` hex string<sup>6</sup>
   - `b'..'`, `B'..'` a binary string<sup>6</sup>
+- [Snowflake][]:
+  - `'..'` (backslash `\` used for escaping)
+  - `$$..$$` (no escaping)
 - [Spark][]:
   - `'..'`, `".."` (backslash `\` used for escaping)
   - `r'..'`, `r".."`, `R'..'`, `R".."` raw string (no escaping)
@@ -78,6 +81,7 @@ The real world implementations have lots of variation:
 [pl/sql]: https://docs.oracle.com/cd/B19306_01/server.102/b14200/sql_elements003.htm#i42617
 [postgresql]: https://www.postgresql.org/docs/current/sql-syntax-lexical.html#SQL-SYNTAX-CONSTANTS
 [redshift]: https://stackoverflow.com/questions/48000322/escaping-single-quotes-in-redshift-sql
+[snowflake]: https://docs.snowflake.com/en/sql-reference/data-types-text.html#string-constants
 [spark]: https://spark.apache.org/docs/latest/sql-ref-literals.html#string-literal
 [sqlite]: https://www.sqlite.org/lang_expr.html#literal_values_constants_
 [sqlite-note]: https://www.sqlite.org/lang_keywords.html
