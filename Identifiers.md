@@ -13,6 +13,7 @@ The differences from this are listed below:
 - [PostgreSQL][]: additionally `$` after first char. Also unicode letters are allowed.
 - [Redshift][]: also unicode letters are allowed. `#` is allowed as the first char of [temporary table names][redshift-temp].
 - SingleStoreDB: Same as MariaDB.<sup>5</sup>
+- [Snowflake][]: additionally `$` after first char allowed.
 - [Spark][]: _Seems like the usual syntax is allowed. But the docs are confusing._
 - [SQLite][sqlite-syntax-pdf]: _(no differences)_
 - [Transact-SQL][]: `@` and `#` are allowed as first chars plus `$` in the rest. Also unicode letters are allowed.
@@ -34,6 +35,7 @@ There is a considerable variation in implementations:
 - `".."` [PL/SQL][pl/sql-quotes] (escaping of quotes is not supported)
 - `".."`, `U&".."` [PostgreSQL][] (repeated `"` used for escaping)
 - `".."` [Redshift][] (repeated `"` used for escaping)
+- `".."` [Snowflake][] (repeated `"` used for escaping)
 - `` `..` `` [Spark][] (repeated `` ` `` used for escaping)
 - `".."`, `` `..` ``, `[..]` [SQLite][sqlite-keywords] (repeated `"` or `` ` `` used for escaping)
 - `".."`<sup>3</sup>, `[..]` [Transact-SQL][] (repeated `"` or `]` used for escaping)
@@ -58,6 +60,7 @@ Notes:
 [postgresql]: https://www.postgresql.org/docs/current/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_names.html
 [redshift-temp]: https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_NEW.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-identifier.html
 [sqlite-keywords]: https://www.sqlite.org/lang_keywords.html
 [sqlite-syntax-pdf]: https://www.pearsonhighered.com/assets/samplechapter/0/6/7/2/067232685X.pdf
