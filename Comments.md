@@ -37,6 +37,18 @@ Some dialects additionally support shell-style hash-comments:
 - [MariaDB](https://mariadb.com/kb/en/comment-syntax/)
 - [MySQL](https://dev.mysql.com/doc/refman/8.0/en/comments.html)
 - SingleStoreDB?
+- Snowflake? (It get's styled as a comment in their editor but does not work)
+
+## Double forward slash comments
+
+Some dialects additionally support c-style slash-comments:
+
+```c
+// a comment
+```
+
+- Snowflake
+
 
 ## Links to comment syntax in all dialects
 
@@ -50,6 +62,7 @@ Some dialects additionally support shell-style hash-comments:
 - [PostgreSQL](https://www.postgresql.org/docs/8.0/sql-syntax.html#SQL-SYNTAX-COMMENTS)
 - Redshift ???
 - SingleStoreDB ???
+- Snowflake ???
 - [Spark](https://stackoverflow.com/questions/68680440/commenting-in-spark-sql)
 - [SQLite](https://www.sqlite.org/lang_comment.html)
 - [Transact-SQL](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/slash-star-comment-transact-sql?view=sql-server-ver16)
