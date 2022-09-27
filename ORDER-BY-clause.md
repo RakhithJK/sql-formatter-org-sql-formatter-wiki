@@ -60,10 +60,6 @@ Other dialects have some variations:
 
     ORDER BY {expr [COLLATE collation] [ASC | DESC]} ["," ...]
 
-[Trino][]:
-
-    ORDER BY {expr [ASC | DESC] [NULLS FIRST | NULLS LAST]} ["," ...]
-
 [sql standard]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#order-by-clause
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#order_by_clause
 [db2]: https://www.ibm.com/docs/en/db2/9.7?topic=queries-subselect#r0000875__orderby
