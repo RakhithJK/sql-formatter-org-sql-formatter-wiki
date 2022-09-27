@@ -8,6 +8,7 @@ This exact syntax is supported by:
 - [N1QL][]
 - [Redshift][]
 - [Snowflake][]
+- [Trino][]
 
 Other dialects have some variations:
 
@@ -78,4 +79,4 @@ Other dialects have some variations:
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html
 [transact-sql]: https://docs.microsoft.com/en-US/sql/t-sql/queries/select-order-by-clause-transact-sql?view=sql-server-ver15
-[trino]: https://github.com/trinodb/trino/blob/c7b26825218d5d11e9469984977dee6856f362ff/core/trino-parser/src/main/antlr4/io/trino/sql/parser/SqlBase.g4#L212
+[trino]: https://trino.io/docs/current/sql/select.html#order-by-clause
