@@ -54,6 +54,10 @@ All dialects support that, but also quite a bit extra stuff:
 
     SELECT [ALL | DISTINCT | DISTINCTROW]
 
+[Snowflake][]:
+
+    SELECT [ALL | DISTINCT]
+
 [Spark][]:
 
     SELECT [hints, ...] [ALL | DISTINCT]
@@ -83,6 +87,7 @@ All dialects support that, but also quite a bit extra stuff:
 [postgresql]: https://www.postgresql.org/docs/current/sql-select.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_SELECT_synopsis.html
 [singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/select.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/sql/select.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html
 [transact-sql]: https://docs.microsoft.com/en-US/sql/t-sql/queries/select-transact-sql?view=sql-server-ver15
