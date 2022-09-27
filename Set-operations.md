@@ -65,6 +65,12 @@ SingleStoreDB ([union][singlestoredb-union], [intersect][singlestoredb-intersect
     | INTERSECT
     | MINUS
 
+[Snowflake][]:
+
+      UNION [ALL]
+    | EXCEPT
+    | MINUS
+    | INTERSECT
 [Spark][]:
 
       UNION [ALL | DISTINCT]
@@ -102,6 +108,7 @@ SingleStoreDB ([union][singlestoredb-union], [intersect][singlestoredb-intersect
 [singlestoredb-union]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/union.html
 [singlestoredb-intersect]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/intersect.html
 [singlestoredb-except-and-minus]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/except-and-minus.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/operators-query.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html#compound_select_statements
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/set-operators-except-and-intersect-transact-sql?view=sql-server-ver15
