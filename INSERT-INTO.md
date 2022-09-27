@@ -54,6 +54,18 @@ All dialects (except Hive) suppurt this syntax, plus a bunch of extra stuff:
 
     REPLACE [INTO] table_name
 
+[Snowflake][]:
+
+    INSERT [OVERWRITE] { INTO tablename | multi_table_insert}
+
+    multi_table_insert:
+      | ALL INTO tablename
+      | [ALL | FIRST] case_insert [ ... ]
+    
+    case_insert:
+      | WHEN condition THEN INTO tablename
+      | ELSE INTO tablename
+
 [Spark][]:
 
     INSERT [INTO | OVERWRITE] [TABLE] table_name
@@ -83,6 +95,7 @@ All dialects (except Hive) suppurt this syntax, plus a bunch of extra stuff:
 [postgresql]: https://www.postgresql.org/docs/current/sql-insert.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_INSERT_30.html
 [singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/insert.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/sql/insert.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-dml-insert-table.html
 [sqlite]: https://www.sqlite.org/lang_insert.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/insert-transact-sql?view=sql-server-ver16
