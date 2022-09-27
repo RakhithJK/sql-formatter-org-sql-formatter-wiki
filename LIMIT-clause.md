@@ -58,6 +58,15 @@ Every dialect however supports either `LIMIT OFFSET` or `OFFSET FETCH` syntax.
 
     LIMIT count OFFSET offset
 
+[Snowflake][] supports two forms:
+
+    LIMIT count [OFFSET offset]
+
+    [FETCH { FIRST | NEXT } [ count ] { ROW | ROWS } { ONLY | WITH TIES }]
+
+    [OFFSET offset {ROW | ROWS}]
+    FETCH [{FIRST | NEXT}] count [{ROW | ROWS}] [ONLY]
+
 [Spark][]:
 
     LIMIT {count | ALL}
@@ -98,6 +107,7 @@ Starting with [SQL Server 2012][], one can use the `OFFSET FETCH` syntax:
 [postgresql]: https://www.postgresql.org/docs/current/sql-select.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_SELECT_synopsis.html
 [singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/select.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/constructs/limit.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html
 [transact-sql]: https://stackoverflow.com/questions/603724/how-to-implement-limit-with-sql-server
