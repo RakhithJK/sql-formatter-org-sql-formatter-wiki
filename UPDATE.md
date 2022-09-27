@@ -89,6 +89,13 @@ This base syntax is pretty well supported (except in Spark):
       [WHERE condition]
       [LIMIT count]
 
+[Snowflake][]:
+
+    UPDATE table_name
+    SET set_clause_list
+    [FROM from_clause]
+    [WHERE condition]
+
 [Spark][]:
 
 _No support for UPDATE_
@@ -131,6 +138,7 @@ _No support for UPDATE_
 [postgresql]: https://www.postgresql.org/docs/current/sql-update.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_UPDATE.html
 [singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/update.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/sql/update.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax.html#dml-statements
 [sqlite]: https://www.sqlite.org/lang_update.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/queries/update-transact-sql?view=sql-server-ver16
