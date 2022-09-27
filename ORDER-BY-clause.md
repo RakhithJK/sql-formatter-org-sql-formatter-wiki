@@ -7,6 +7,7 @@ This exact syntax is supported by:
 - [BigQuery][]
 - [N1QL][]
 - [Redshift][]
+- [Snowflake][]
 
 Other dialects have some variations:
 
@@ -73,6 +74,7 @@ Other dialects have some variations:
 [postgresql]: https://www.postgresql.org/docs/current/sql-select.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_ORDER_BY_clause.html
 [singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/select.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/constructs/order-by.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html
 [transact-sql]: https://docs.microsoft.com/en-US/sql/t-sql/queries/select-order-by-clause-transact-sql?view=sql-server-ver15
