@@ -12,7 +12,9 @@
 - [PostgreSQL][]: identifier syntax (only in PL/pgSQL).
 - Redshift: _N/A_
 - [SingleStoreDB][]:<sup>1</sup> `@name` (where the name consists of alphanumeric characters, `_`, and `$`), `` @`var name` ``. Also `@@name` for system variables.
-- [Snowflake][]: `$name` (using identifier syntax for name).
+- [Snowflake][]: 
+  - `$name` (using identifier syntax for name)
+  - `$number` references the column at this place (from left to right) in the table, see [here](https://docs.snowflake.com/en/sql-reference/sql/select.html#parameters)
 - [Spark][]: `${name}` Like with Hive, these are substitution variables.
 - SQLite: _N/A_
 - [Transact-SQL][]: `@name` (using identifier syntax for name)
