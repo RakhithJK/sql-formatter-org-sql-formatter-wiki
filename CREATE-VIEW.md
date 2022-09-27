@@ -60,6 +60,9 @@ _No support for CREATE VIEW._
       [DEFINER "=" {user | CURRENT_USER}]
       [SCHEMA_BINDING "=" {ON | OFF}]
       VIEW
+[Snowflake][]:
+
+    CREATE [OR REPLACE] [SECURE] [RECURSIVE] VIEW [IF NOT EXISTS]
 
 [Spark][]:
 
@@ -88,6 +91,7 @@ _No support for CREATE VIEW._
 [postgresql]: https://www.postgresql.org/docs/current/sql-createview.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_VIEW.html
 [singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-definition-language-ddl/create-view.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/sql/create-view.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-create-view.html
 [sqlite]: https://www.sqlite.org/lang_createview.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/create-view-transact-sql?view=sql-server-ver15
