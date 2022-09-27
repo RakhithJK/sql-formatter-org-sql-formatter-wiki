@@ -50,6 +50,7 @@ Other than that, the following dialects support everything else:
 | [PostgreSQL][]<sup>1</sup>| :heavy_check_mark: | :heavy_check_mark: |
 | [Redshift][]              |                    | :heavy_check_mark: |
 | [SingleStoreDB][]         |                    | :heavy_check_mark: |
+| [Snowflake][]<sup>3</sup> |                    | :heavy_check_mark: |
 | [Spark][]                 | :heavy_check_mark: | :heavy_check_mark: |
 | [SQLite][]<sup>1</sup>    | :heavy_check_mark: | :heavy_check_mark: |
 | [Trino][]<sup>1, 2</sup>  | :heavy_check_mark: | :heavy_check_mark: |
@@ -73,6 +74,12 @@ Other than that, the following dialects support everything else:
 
     [Trino][] does not support `frame_exclusion`.
 
+3. [Snowflake][] only supports the basic `window_specification` syntax:
+
+        window_specification:
+          [PARTITION BY expr]
+          [ORDER BY expr]
+
 [sql standard]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_7_11_window_clause
 [sql-win-func]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_6_10_window_function
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/window-function-calls#def_window_spec
@@ -85,6 +92,7 @@ Other than that, the following dialects support everything else:
 [postgresql]: https://www.postgresql.org/docs/current/sql-select.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_Window_function_synopsis.html
 [singlestoredb]: https://docs.singlestore.com/managed-service/en/developer-resources/functional-extensions/working-with-window-functions.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/functions-analytic.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select.html
 [sqlite]: https://www.sqlite.org/lang_select.html
 [transact-sql]: https://docs.microsoft.com/en-US/sql/t-sql/queries/select-window-transact-sql?view=sql-server-ver16&viewFallbackFrom=sql-server-ver15
