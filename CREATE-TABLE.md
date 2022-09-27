@@ -1,7 +1,7 @@
 [SQL standard][] specifies the following CREATE TABLE syntax:
 
     CREATE [{GLOBAL | LOCAL} TEMPORARY] TABLE
-
+https://github.com/sql-formatter-org/sql-formatter/wiki/_new
 Dialects have considerable variation:
 
 [BigQuery][]:
@@ -51,6 +51,16 @@ _No support for CREATE TABLE._
 
     CREATE [ROWSTORE] [REFERENCE | TEMPORARY | GLOBAL TEMPORARY] TABLE [IF NOT EXISTS]
 
+[Snowflake][]:
+
+    CREATE [OR REPLACE] [table_type] TABLE [IF NOT EXISTS]
+
+    table_type:
+        [{LOCAL | GLOBAL}] TEMP[ORARY]
+      | VOLATILE
+      | TRANSIENT
+
+
 [Spark][]:
 
     CREATE [EXTERNAL] TABLE [IF NOT EXISTS]
@@ -78,6 +88,7 @@ _No support for CREATE TABLE._
 [postgresql]: https://www.postgresql.org/docs/current/sql-createtable.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_NEW.html
 [singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-definition-language-ddl/create-table.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/sql/create-table.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-create-table.html
 [sqlite]: https://www.sqlite.org/lang_createtable.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver15
