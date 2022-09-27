@@ -62,8 +62,6 @@ Every dialect however supports either `LIMIT OFFSET` or `OFFSET FETCH` syntax.
 
     LIMIT count [OFFSET offset]
 
-    [FETCH { FIRST | NEXT } [ count ] { ROW | ROWS } { ONLY | WITH TIES }]
-
     [OFFSET offset {ROW | ROWS}]
     FETCH [{FIRST | NEXT}] count [{ROW | ROWS}] [ONLY]
 
