@@ -6,7 +6,7 @@ Here's a simplified syntax of FROM clause from [SQL standard][]:
       table_factor | joined_table
 
     joined_table:
-        table_reference CROSS JOIN table_reference [join_specification]
+        table_reference CROSS JOIN table_reference
       | table_reference [join_type] JOIN table_reference [join_specification]
       | table_reference NATURAL [join_type] JOIN table_reference
 
@@ -83,9 +83,7 @@ Additionally supports `STRAIGHT_JOIN`.
 
 [Snowflake][]:
 
-Does nearly support the full standard:
-
-- `CROSS JOIN` is only allowed without `join_specification`
+Supports the full standard.
 
 [Spark][]:
 
