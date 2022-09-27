@@ -84,6 +84,12 @@ This base syntax is pretty well supported (except in Spark):
       [WHERE expr]
       [LIMIT count]
 
+[Snowflake][]:
+
+    DELETE FROM table_name
+      [USING from_items]
+      [WHERE condition]
+
 [Spark][]:
 
 _No support for DELETE_
@@ -119,6 +125,7 @@ _No support for DELETE_
 [postgresql]: https://www.postgresql.org/docs/current/sql-delete.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_DELETE.html
 [singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-manipulation-language-dml/delete.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/sql/delete.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax.html#dml-statements
 [sqlite]: https://www.sqlite.org/lang_delete.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/delete-transact-sql?view=sql-server-ver16
