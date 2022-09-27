@@ -106,6 +106,21 @@ SingleStoreDB:
 
 _No support for MERGE_
 
+[Snowflake][]:
+
+    MERGE INTO table_name
+      USING table_name ON where_clause
+      when_clause...
+
+    when_clause:
+        WHEN MATCHED [AND predicate] THEN update_delete 
+      | WHEN NOT MATCHED THEN INSERT [col_list] VALUES values_list
+
+    update_delete:
+        UPDATE SET set_clause_list
+      | DELETE
+
+
 [Spark][]:
 
 _No support for MERGE_
@@ -146,6 +161,7 @@ _No support for MERGE_
 [pl/sql]: https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/MERGE.html
 [postgresql]: https://www.postgresql.org/docs/current/sql-commands.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_commands.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/sql/merge.html
 [spark]: https://spark.apache.org/docs/3.3.0/sql-ref-syntax.html
 [sqlite]: https://www.sqlite.org/lang.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/merge-transact-sql?view=sql-server-ver16
