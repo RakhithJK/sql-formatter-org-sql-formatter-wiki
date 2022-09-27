@@ -47,6 +47,10 @@ _No support for DROP TABLE._
 
     DROP [TEMPORARY] TABLE [IF EXISTS] table_name [FORCE]
 
+[Snowflake][]:
+
+    DROP TABLE [IF EXISTS] table_name [CASCADE | RESTRICT]
+
 [Spark][]:
 
     DROP TABLE [IF EXISTS] table_name
@@ -74,6 +78,7 @@ _No support for DROP TABLE._
 [postgresql]: https://www.postgresql.org/docs/current/sql-droptable.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_DROP_TABLE.html
 [singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-definition-language-ddl/drop-table.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/sql/drop-table.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-drop-table.html
 [sqlite]: https://www.sqlite.org/lang_droptable.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/drop-table-transact-sql?view=sql-server-ver15
