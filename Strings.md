@@ -42,7 +42,7 @@ The real world implementations have lots of variation:
   - `x'..'`, `X'..'` hex string<sup>6</sup>
   - `b'..'`, `B'..'` a binary string<sup>6</sup>
 - [Snowflake][]:
-  - `'..'` (backslash `\` used for escaping)
+  - `'..'` (backslash `\` or repeated quote `''` used for escaping)
   - `$$..$$` (no escaping)
 - [Spark][]:
   - `'..'`, `".."` (backslash `\` used for escaping)
