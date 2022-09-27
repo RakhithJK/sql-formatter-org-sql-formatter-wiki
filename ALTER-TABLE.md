@@ -751,6 +751,45 @@ _No support for ALTER TABLE._
       | AUTO_INCREMENT [=] <new_value>
       | COMPRESSION [=] { NONE | SPARSE }
 
+[Snowflake][]:
+
+    ALTER TABLE [IF EXISTS] table_name alter_table_action
+
+    alter_table_action:
+        RENAME TO table_name
+      | SWAP WITH table_name
+      | clustering_action
+      | table_column_action
+      | constraint_action
+      | search_optimization_action
+      | SET [TAG] set_clause_list
+      | UNSET [TAG] set_name_list
+      | ADD ROW ACCESS POLICY policy_name ON (column_list)
+      | DROP [ALL] ROW ACCESS POLICY policy_name
+
+    clustering_action:
+      CLUSTER BY "(" expr [, ...] ")"
+      | RECLUSTER [MAX_SIZE = budget_in_bytes] [WHERE where_clause]
+      | {SUSPEND | RESUME} RECLUSTER
+      | DROP CLUSTERING KEY
+    
+    table_column_action:
+      ADD [COLUMN] col_name col_type
+      | RENAME COLUMN col_name TO new_col_name
+      | {ALTER | MODIFY} ["("] [COLUMN] col_name alter_col_action [...] [")"]
+      | DROP [COLUMN] col_list
+
+     constraintAction:
+       ADD constraint
+       | ALTER constraint
+       | MODIFY constraint
+       | DROP constraint
+       | RENAME CONSTRAINT constraint_name TO constraint_name
+
+      searchOptimizationAction:
+        ADD SEARCH OPTIMIZATION [ON search_method_with_target_list]
+        | DROP SEARCH OPTIMIZATION [ON search_method_with_target_list]
+
 [Spark][]:
 
     ALTER TABLE table_name alter_table_action
@@ -892,6 +931,7 @@ _No support for ALTER TABLE._
 [postgresql]: https://www.postgresql.org/docs/current/sql-altertable.html
 [redshift]: https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_TABLE.html
 [singlestoredb]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/data-definition-language-ddl/alter-table.html
+[snowflake]: https://docs.snowflake.com/en/sql-reference/sql/alter-table.html
 [spark]: https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-alter-table.html
 [sqlite]: https://www.sqlite.org/lang_altertable.html
 [transact-sql]: https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-table-transact-sql?view=sql-server-ver15
