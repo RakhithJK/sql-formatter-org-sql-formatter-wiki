@@ -83,7 +83,7 @@ Additionally supports `STRAIGHT_JOIN`.
 
 [Snowflake][]:
 
-Supports the full standard.
+Does not support `NATURAL INNER JOIN`.
 
 [Spark][]:
 
