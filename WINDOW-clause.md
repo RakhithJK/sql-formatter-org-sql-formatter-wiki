@@ -50,7 +50,7 @@ Other than that, the following dialects support everything else:
 | [PostgreSQL][]<sup>1</sup>| :heavy_check_mark: | :heavy_check_mark: |
 | [Redshift][]              |                    | :heavy_check_mark: |
 | [SingleStoreDB][]         |                    | :heavy_check_mark: |
-| [Snowflake][]<sup>3</sup> |                    | :heavy_check_mark: |
+| [Snowflake][]             |                    | :heavy_check_mark: |
 | [Spark][]                 | :heavy_check_mark: | :heavy_check_mark: |
 | [SQLite][]<sup>1</sup>    | :heavy_check_mark: | :heavy_check_mark: |
 | [Trino][]<sup>1, 2</sup>  | :heavy_check_mark: | :heavy_check_mark: |
@@ -74,11 +74,6 @@ Other than that, the following dialects support everything else:
 
     [Trino][] does not support `frame_exclusion`.
 
-3. [Snowflake][] only supports the basic `window_specification` syntax:
-
-        window_specification:
-          [PARTITION BY expr]
-          [ORDER BY expr]
 
 [sql standard]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_7_11_window_clause
 [sql-win-func]: https://jakewheat.github.io/sql-overview/sql-2008-foundation-grammar.html#_6_10_window_function
