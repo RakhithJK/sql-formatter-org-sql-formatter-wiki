@@ -56,7 +56,7 @@ _No support for CREATE TABLE._
     CREATE [OR REPLACE] [table_type] TABLE [IF NOT EXISTS]
 
     table_type:
-        [{LOCAL | GLOBAL}] TEMP[ORARY]
+        [LOCAL | GLOBAL] {TEMP | TEMPORARY}
       | VOLATILE
       | TRANSIENT
 
