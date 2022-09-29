@@ -758,37 +758,39 @@ _No support for ALTER TABLE._
     alter_table_action:
         RENAME TO table_name
       | SWAP WITH table_name
-      | clustering_action
-      | table_column_action
-      | constraint_action
-      | search_optimization_action
-      | SET [TAG] set_clause_list
-      | UNSET [TAG] set_name_list
-      | ADD ROW ACCESS POLICY policy_name ON (column_list)
-      | DROP [ALL] ROW ACCESS POLICY policy_name
-
-    clustering_action:
-      CLUSTER BY "(" expr [, ...] ")"
-      | RECLUSTER [MAX_SIZE = budget_in_bytes] [WHERE where_clause]
+      | CLUSTER BY "(" expr ["," ...] ")"
+      | RECLUSTER [MAX_SIZE = number] [WHERE cond]
       | {SUSPEND | RESUME} RECLUSTER
       | DROP CLUSTERING KEY
-    
-    table_column_action:
-      ADD [COLUMN] col_name col_type
+      | ADD [COLUMN] column_definition
       | RENAME COLUMN col_name TO new_col_name
-      | {ALTER | MODIFY} ["("] [COLUMN] col_name alter_col_action [...] [")"]
-      | DROP [COLUMN] col_list
+      | {ALTER | MODIFY} "(" [COLUMN] col_name alter_col_action ["," ...] ")"
+      | {ALTER | MODIFY} [COLUMN] col_name alter_col_action
+      | DROP [COLUMN] column_list
+      | ADD constraint
+      | ALTER constraint
+      | MODIFY constraint
+      | DROP constraint
+      | RENAME CONSTRAINT constraint_name TO constraint_name
+      | {ADD | DROP} SEARCH OPTIMIZATION [ON search_method_with_target_list]
+      | SET [TAG] set_clause_list
+      | UNSET [TAG] set_name_list
+      | ADD ROW ACCESS POLICY policy_name ON "(" column_list ")"
+      | DROP ROW ACCESS POLICY policy_name
+      | DROP ALL ROW ACCESS POLICIES
 
-     constraintAction:
-       ADD constraint
-       | ALTER constraint
-       | MODIFY constraint
-       | DROP constraint
-       | RENAME CONSTRAINT constraint_name TO constraint_name
-
-      searchOptimizationAction:
-        ADD SEARCH OPTIMIZATION [ON search_method_with_target_list]
-        | DROP SEARCH OPTIMIZATION [ON search_method_with_target_list]
+    alter_col_action:
+      | DROP DEFAULT
+      | SET DEFAULT seq_name.NEXTVAL
+      | [SET] NOT NULL
+      | DROP NOT NULL
+      | [[SET DATA] TYPE] type
+      | COMMENT string
+      | UNSET COMMENT
+      | SET MASKING POLICY policy_name [ USING "(" column_list ")" ]
+      | UNSET MASKING POLICY
+      | SET TAG set_clause_list
+      | UNSET TAG set_name_list
 
 [Spark][]:
 
