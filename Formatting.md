@@ -18,6 +18,8 @@ Other tools that perform SQL formatting.
 - [sqlparse](https://sqlformat.org/) Python library and online formatter.\
   (This one is really quite bad. The style is a bit like our tabularLeft, but with variable indentation.
   The formatting of CREATE TABLE is exceptionally bad.)
+- [pgFormatter](https://sqlformat.darold.net/) Perl library an online formatter for PostgreSQL.
+  This looks pretty nice. Has several useful options. Handles comments. Though it doesn't do anything with long lines and the indentation is a bit of a mixed bag. 
 - [Instant SQL formatter](https://www.dpriver.com/pp/sqlformat.htm) online tool and VS plugin.\
   Uses tabularLeft & tabularRight styles, but with 7 instead of 10 spaces.
 - [Freeformatter.com](https://www.freeformatter.com/sql-formatter.html) a site with online formatters for many languages.\
