@@ -31,7 +31,7 @@ Other tools that perform SQL formatting.
 - [SQL Formatter](https://www.apexsql.com/sql-tools-refactor.aspx) a proprietary tool from ApexSQL.
 - [SQLinForm](https://www.sqlinform.com/) a proprietary tool (also free versions available)
 - [SQL Pretty Printer](https://www.dpriver.com/) a proprietary tool.
-- [SQL Fluff](https://docs.sqlfluff.com/en/stable/index.html) A linter for SQL (also has formatting rules).
+- [SQL Fluff](https://github.com/sqlfluff/sqlfluff) A linter and formatter for SQL, written in Python. [Online version.](https://online.sqlfluff.com/)
 - [SQL Prompt](https://www.red-gate.com/website/sql-formatter) A proprietary tool, has an online demo of the formatter.\
   Supports multiple distinct styles of formatting.
 
