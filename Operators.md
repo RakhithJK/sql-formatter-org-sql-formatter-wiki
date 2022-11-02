@@ -133,6 +133,7 @@ Same as Hive. Additionally (perhaps also in Hive?):
 
 - Arithmetic: `%`
 - [Lambda expression][trino-lambda]: `->`
+- [Named arguments][trino-arg]: `=>`
 - [Object key-value separator][trino-obj]: `:`
 - [Row pattern syntax][trino-row]: `+`, `|`, `*`, `?`, `$`, `(`..`)`, `{-`..`-}`, `{n}`, `{m,n}`
 - String concatenation: `||`
@@ -192,6 +193,7 @@ Notes:
 [tsql-compound]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/compound-operators-transact-sql?view=sql-server-ver16
 [tsql-comp]: https://docs.microsoft.com/en-us/sql/t-sql/language-elements/comparison-operators-transact-sql?view=sql-server-ver16
 [trino]: https://trino.io/docs/current/functions/list.html#id1
+[trino-arg]: https://trino.io/docs/current/functions/table.html#argument-passing-conventions
 [trino-lambda]: https://trino.io/docs/current/functions/lambda.html#lambda-expressions
 [trino-obj]: https://trino.io/docs/current/functions/json.html?highlight=json#json-object
 [trino-row]: https://trino.io/docs/current/sql/match-recognize.html#row-pattern-syntax
