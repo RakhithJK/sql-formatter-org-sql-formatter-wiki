@@ -98,7 +98,9 @@ Below only additional non-standard operators are listed (the uncommon ones (`::`
 - [Assignment][ssdb-var]:<sup>2</sup> `:=`
 - [Bitwise][ssdb-bit]: `&`, `|`, `^`, `~`, `>>`, `<<`
 - [Comparison][ssdb-comp]: `<=>` (NULL-safe equal operator)
+- [JSON][ssdb-json]: `::`, `::$`, `::%`
 - Logical:<sup>1</sup> `&&`, `||`
+- [Type cast][ssdb-cast]: `:>`, `!:>`
 
 #### [Snowflake][]:
 - [Arithmethic][snow-math]: `%`
@@ -182,8 +184,10 @@ Notes:
 [snow-math]: https://docs.snowflake.com/en/sql-reference/operators-arithmetic.html
 [snow-path]: https://docs.snowflake.com/en/sql-reference/functions/get_path.html#get-path
 [snow-string]: https://docs.snowflake.com/en/sql-reference/functions/concat.html#concat
+[ssdb-cast]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/conditional-functions/cast-or-convert.html#cast-operators----and----
 [ssdb-comp]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/comparison-operators-and-functions.html
 [ssdb-bit]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/numeric-functions/bitwise-and----.html
+[ssdb-json]: https://docs.singlestore.com/managed-service/en/create-a-database/physical-database-schema-design/procedures-for-physical-database-schema-design/using-json.html#accessing-fields-in-a-json-object
 [ssdb-var]: https://docs.singlestore.com/managed-service/en/reference/sql-reference/user-defined-variables/set.html
 [spark-lambda]: https://github.com/sql-formatter-org/sql-formatter/issues/176
 [sqlite]: https://www.sqlite.org/lang_expr.html#operators_and_parse_affecting_attributes
