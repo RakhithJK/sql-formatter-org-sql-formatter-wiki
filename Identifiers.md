@@ -4,7 +4,7 @@ Most dialects support `[a-zA-Z_]` as first character and `[a-zA-Z0-9_]` as rest 
 The differences from this are listed below:
 
 - [BigQuery][]: single dashes (`-`) can be used, but not at the beginning or end.
-- [DB2][]: first char can only be a (uppercase) letter (a lowercase letter gets converted to uppercase).
+- [DB2][]: first char can be an uppercase letter, [`@`, `#`, or `$`.][db2lib] (a lowercase letter gets converted to uppercase). See also [#550][issue550].
 - [Hive][]: _(no differences)_
 - [MariaDB][]: no first-letter restrictions. The characters `[a-zA-Z0-9_$]` and unicode letters are allowed everywhere. Can begin with digit, but can't only contain digits.
 - [MySQL][]: same as MariaDB.
@@ -51,6 +51,8 @@ Notes:
 
 [bigquery]: https://cloud.google.com/bigquery/docs/reference/standard-sql/lexical
 [db2]: https://www.ibm.com/docs/en/db2/9.7?topic=elements-identifiers
+[db2lib]: https://jazz.net/sandbox01-clmhelp/index.jsp?topic=%2Fcom.ibm.team.scm.doc%2Ftopics%2Fr_RTCp_libraryparms.html
+[issue550]: https://github.com/sql-formatter-org/sql-formatter/issues/550
 [hive]: https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=27362034#LanguageManualDDL-AlterColumn
 [mariadb]: https://mariadb.com/kb/en/identifier-names/
 [mysql]: https://dev.mysql.com/doc/refman/8.0/en/identifiers.html
